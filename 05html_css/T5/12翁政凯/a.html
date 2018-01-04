@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table border="1"> 
+			<form method="post" action="" >
+		<tr> 
+		<td colspan="2" align="center"> 证卷调查试例 </td>
+		</tr>
+		<tr>
+			<td>投资经验：</td>
+			<td>
+				<input type="radio" name="ss" value="xinshou"/>新手
+				<input type="radio" name="ss" value="zhongji"/>中级
+				<input type="radio" name="ss" value="zhuanjia"/>专家
+			</td>
+		</tr>
+		<tr>
+		<td>投资方式：</td>
+	<td>
+		<input type="checkbox" name="kk" value="gupiao"/>股票
+		<input type="checkbox" name="kk" value="qihuo"/>期货
+		<input type="checkbox" name="kk" value="jijin"/>基金
+	</td></tr>
+	<tr><td>股票购买方式：</td>
+		<td><select name="province">
+			<option value="wangshnag">网上</option>
+			<option value="shouji">手机</option>
+			<option value="jiaoyiting">交易厅</option>
+			</select>
+		</td></tr>
+		<tr><td>今天关注的股票：</td>
+			<td><input type="text" name="uesr" value="" /> <font color="crimson">*</font>
+			</td></tr>
+			<tr><td>你对投资者的建议：</td>
+				<td> <textarea name="注释" cols="20" rows="5" value="" required="required">
+		</textarea>
+</td></tr>
+<tr><td colspan="2" align="center"> 
+		<input type="submit" name="sub" value="提交" />
+		<input type="reset" name="ret" value="撤销" />
+</td></tr>
+</form>
+		</table>
+	</body>
+</html>
