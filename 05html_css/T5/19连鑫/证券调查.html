@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form name="表单" action="" method="get">
+		<center>
+			<table border="1">
+			<tr>
+				<td colspan="3" width="900" align="center">证券调查示例</td>
+			</tr>
+			<tr>
+				<td align="right" width="300">投资经验：</td>
+				<td colspan="2">
+					<input type="radio" name="ww" value="新手" checked/>新手
+					<input type="radio" name="ww" value="中级"/>中级
+					<input type="radio" name="ww" value="专家"/>专家
+				</td>
+			</tr>
+			<tr>
+				<td align="right">投资方式：</td>
+				<td colspan="2">
+					<input type="checkbox" name="qq" value="股票" checked/>股票
+					<input type="checkbox" name="qq" value="期贷" />期贷
+					<input type="checkbox" name="qq" value="基金" />基金
+				</td>
+			</tr>
+			<tr>
+				<td align="right">购买股票的方式：</td>
+				<td colspan="2">
+					<select name="购买方式">
+						<optgroup value="购买方式">
+							<option value="网上" selected>网上</option>
+							<option value="手机" >手机</option>
+							<option value="电脑" >电脑</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">今天关注的股票：</td>
+				<td colspan="2">
+					<input type="text" required="required" /><font color="red">*</font>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" height="100">你对投资者的意见：</td>
+				<td>
+					<textarea name="意见" cols="20" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="3">
+					<input type="submit" name="sub" value="提交"/>
+					<input type="reset" name="res" value="撤销"/>
+				</td>
+			</tr>
+			
+		</table>
+		</center>
+		</form>
+	</body>
+</html>

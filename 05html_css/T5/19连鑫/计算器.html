@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计算器</title>
+		<script type="text/javascript" language="JavaScript">
+			function add(obj){
+				document.getElementById("cc").value+=obj.value;
+//				根据指定的 id 属性值得到对象。返回 id 属性值等于 sID 的第一个对象的引用。
+//				 document.getElementById(" ") 得到的是一个对象，
+//				 用 alert 显示得到的是“ object ”，而不是具体的值，
+//				 它有 value 和 length 等属性，加上 .value 得到的才是具体的值！
+			}
+			function dengyu(){
+				var obj=document.getElementById("cc").value;
+//				var语句用于声明变量 
+//				JavaScript 变量的创建也叫作"声明"一变量:
+				if(obj.indexOf("=")<0)
+				document.getElementById("cc").value+="="+eval(obj);
+//				eval() 函数可计算某个字符串，并执行其中的的 JavaScript 代码。
+//				返回值
+//              通过计算 string 得到的值（如果有的话）。
+//              该方法只接受原始字符串作为参数，如果 string 参数不是原始字符串，
+//              那么该方法将不作任何改变地返回。因此请不要为 eval() 函数传递 String 对象来作为参数。
+			}
+			function shanchu(){
+				document.getElementById("cc").value="";
+			}
+		</script>
+	</head>
+	<body>
+		
+		
+			<table border="1" align="justify">
+			<tr>
+				<td colspan="4"><input type="text" align="right" id="cc" /></td>
+			</tr>	
+			<tr>
+				<td><input type="button" id="b7" value="7" onclick="add(this)" /></td>
+				<td><input type="button" id="b8" value="8" onclick="add(this)"/></td>
+				<td><input type="button" id="b9" value="9" onclick="add(this)"/></td>
+				<td><input type="button" id="b10" value="+" onclick="add(this)"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="b4" value="4" onclick="add(this)"/></td>
+				<td><input type="button" id="b5" value="5" onclick="add(this)"/></td>
+				<td><input type="button" id="b6" value="6" onclick="add(this)"/></td>
+				<td><input type="button" id="b11" value=" -" onclick="add(this)"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="b1" value="1" onclick="add(this)"/></td>
+				<td><input type="button" id="b2" value="2" onclick="add(this)"/></td>
+				<td><input type="button" id="b3" value="3" onclick="add(this)"/></td>
+				<td><input type="button" id="b12" value=" *" onclick="add(this)"/></td>
+			</tr>
+			<tr>
+				<td ><input type="button" id="b0" value="0" onclick="add(this)"/></td>				
+				<td><input type="button" id="b14" value="=" onclick="dengyu()" /></td>
+				<td><input type="button" id="b13" value=" /" onclick="add(this)"/></td>
+				<td><input type="button" id="b15" value="del" onclick="shanchu()" /> </td>
+			</tr>
+			</table>
+		
+	</body>
+</html>
