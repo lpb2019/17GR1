@@ -1,0 +1,77 @@
+
+
+
+create table yonghu (
+id  int primary key ,
+name nvarchar(20)null ,
+sfzhenghao nvarchar(18) not null unique 
+) 
+create table haoma  (
+id  int primary key ,
+sjhaoma  nvarchar(11)null unique  ,
+zhuangtai int not null  
+) 
+create table yigou  (
+id  int primary key ,
+yonghuid int not null foreign key references yonghu(id),
+haomaid int not null foreign key references haoma(id),
+zcshijian datetime  ,
+zxshijian datetime  ,
+czshijian datetime  ,
+yue decimal(18,2) default 0
+) 
+--插入数据到yonghu表中:
+INSERT INTO [dbo].[yonghu]  ([id]  ,[name] ,[sfzhenghao])   VALUES(1,'张三','123456789123456781')
+INSERT INTO [dbo].[yonghu]  ([id]  ,[name] ,[sfzhenghao])   VALUES(2,'赵四','123456789123456782')
+INSERT INTO [dbo].[yonghu]  ([id]  ,[name] ,[sfzhenghao])   VALUES(3,'王五','123456789123456783')
+INSERT INTO [dbo].[yonghu]  ([id]  ,[name] ,[sfzhenghao])   VALUES(4,'莎莉','123456789123456784')
+  --插入数据到haoma表中:
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (1,'12345678911',0)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (2,'12345678912',1)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (3,'12345678913',1)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (4,'12345678914',2)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (5,'12345678915',2)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (6,'12345678916',0)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (7,'12345678917',1)
+  INSERT INTO [dbo].[haoma]([id],[sjhaoma] ,[zhuangtai])   VALUES    (8,'12345678918',0)
+ --插入数据到yigou表中:  
+ INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(1,1,1,null,null,null,null)
+INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(2,1,2,'2014-01-20',null,null,100)
+INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(3,2,3,'2015-02-20',null,null,10.0)
+INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(4,3,4,'2012-01-25','2014-01-20','2014-01-10',0.25)
+INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(5,4,5,'2012-02-09','2014-01-20','2014-01-10',0.25)
+ INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(6,2,6,null,null,null,null)
+INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(7,2,7,'2015-02-20',null,null,10.0)
+INSERT INTO [dbo].[yigou]([id]   ,[yonghuid]   ,[haomaid]  ,[zcshijian]  ,[zxshijian]   ,[czshijian]   ,[yue])
+VALUES(8,4,8,null,null,null,null)
+--三、	修改号码编号为1，用户编号为1的余额增加100（10分）
+update  yigou set yue =yue +100 where haomaid=1and yonghuid=1 
+--四、	在已购号码表中删除号码状态为已注销的数据（10分）
+   delete from yigou  where haomaid in(select id from haoma where zhuangtai=2  )
+--五、	写出查询已注册手机号的用户信息的查询语句(10分)
+select y.id,y.name,y.sfzhenghao from yonghu y, haoma h,yigou g where y.id=g.yonghuid
+and h.id=g.haomaid and h.zhuangtai=1 
+--六、	查询出所有未注册的手机号(10分)
+select sjhaoma  from haoma where zhuangtai=0 
+--七、	查询出所有已注册并且余额小于10的手机号码以及用户信息
+select y.id,y.name,y.sfzhenghao,h.sjhaoma from yonghu y, haoma h,yigou g where y.id=g.yonghuid
+and h.id=g.haomaid and h.zhuangtai=1 and g.yue<10
+
+
+
+        
+        
+         
+         
+        
+        
+           
+            
+     
