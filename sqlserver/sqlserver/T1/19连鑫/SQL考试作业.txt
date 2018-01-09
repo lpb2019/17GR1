@@ -1,0 +1,91 @@
+手机号注册充值系统
+为了方便手机号码注册充值，记录详细注册充值信息，需要提供手机号注册充值系统，该系统具有以下功能：
+1.	手机号注册
+2.	手机号注销
+3.	手机号用户信息查询
+该系统表结构如下：
+用户表
+用户编号	整型	主键
+姓名	字符型	
+身份证号	字符型	唯一，长度为18
+
+create table Userb(
+Uid int primary key identity(1,1),
+Uname nvarchar(20),
+Unum varchar(30) unique check(len(Unum)=18)
+)
+
+号码表
+号码编号	整型	主键
+手机号码	字符型	唯一，长度为11
+号码状态	整型	0(未注册)1(已注册)2(已注销)
+
+create table Pnumber(
+Pid int primary key identity(1,1),
+Pnum varchar(30) unique check(len(Pnum)=11),
+Pzt int 
+)
+
+已购号码表
+号码编号	整型	外键引用号码表
+用户编号	整型	外键引用用户表
+注册时间	日期型	
+注销时间	日期型	
+最后充值时间	日期型	
+余额	浮点型	默认为0
+
+create table Ynumber(
+Yid int primary key identity(1,1),
+Uid int foreign key references Userb(Uid),
+Pid int foreign key references Pnumber(Pid),
+Yzc datetime,
+Yzx datetime,
+Ycz datetime,
+Yyu_e decimal(18,2)
+)
+
+根据要求完成以下问题：
+一、	根据表结构创建对应的表（30分）
+
+
+
+二、	插入数据，每张表至少两条数据(10分)
+
+insert into Userb(Uid,Uname,Unum)values(1,'张三','123456789123456789')
+insert into Userb(Uid,Uname,Unum)values(2,'李四','123456789123456788')
+insert into Userb(Uid,Uname,Unum)values(3,'王五','123456789123456787')
+insert into Userb(Uid,Uname,Unum)values(4,'赵六','123456789123456786')
+
+insert into Pnumber(Pid,Pnum,Pzt)values(1,'12345678901',1)
+insert into Pnumber(Pid,Pnum,Pzt)values(2,'12345678902',1)
+insert into Pnumber(Pid,Pnum,Pzt)values(3,'12345678903',2)
+insert into Pnumber(Pid,Pnum,Pzt)values(4,'12345678904',0)
+
+insert into Ynumber(Yid,Uid,Pid,Yzc,Yzx,Ycz,Yyu_e)values(1,1,1,2012-02-06,2015-06-08,2015-05-28,5.60)
+insert into Ynumber(Yid,Uid,Pid,Yzc,Yzx,Ycz,Yyu_e)values(2,2,2,2013-03-07,2016-03-08,2013-02-28,9.90)
+insert into Ynumber(Yid,Uid,Pid,Yzc,Yzx,Ycz,Yyu_e)values(3,3,3,2014-04-08,2017-04-06,2017-02-28,12.00)
+insert into Ynumber(Yid,Uid,Pid,Yzc,Yzx,Ycz,Yyu_e)values(4,4,4,2015-05-09,2018-05-05,2018-05-02,3.10)
+三、	修改号码编号为1，用户编号为1的余额增加100（10分）
+
+update Ynumber set Yyu_e=Yyu_e+100 where Uid=1 and Pid=1
+
+四、	在已购号码表中删除号码状态为已注销的数据（10分）
+
+delete from Ynumber y where Pid in (select Pid from Pnumber p where y.pid=p.pid and Pzt=2)
+
+五、	写出查询已注册手机号的用户信息的查询语句(10分)
+
+select Uname,Unum from Userb u,Pnumber p,Ynumber y where u.Uid=y.Uid and p.Pid=y.Pid and p.Pzt=1
+
+select Uname,Unum from User u join Ynumber y on(u.Uid=y.Uid)join Pnumber p on (y.Pid=P.Pid) where p.Pzt=1
+
+六、	查询出所有未注册的手机号(10分)
+
+select Pnum from Pnumber where Pzt=0
+
+七、	查询出所有已注册并且余额小于10的手机号码以及用户信息（20分）
+
+select u.Uname ,p.Pnum from Userb u,Pnumber p,Ynumber y where u.Uid=Y.Uid and p.Pid=Y.Pid and (p.Pzt=1 and y.Yyu_e<10) group by Uname
+
+select u.Uname ,p.Pnum from Userb u join Ynumber y on (u.Uid=y.Uid) join Pnumber p on (p.Pid=y.Pid) where p.Pzt=1 and y.Yyu_e<10 group by Uname
+
