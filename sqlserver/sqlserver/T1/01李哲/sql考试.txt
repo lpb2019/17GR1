@@ -1,0 +1,61 @@
+create database anyan;
+create table yonghu (
+yid int primary key,
+name nvarchar(20), 
+sfzh nvarchar(20) check(len(sfzh)=18) unique
+)
+create table haoma (
+hid int primary key,
+haoma nvarchar(20) check(len(sfzh)=11) unique, 
+zhuangtai int check(zhuangtai in('0','1','2' )) 
+)
+create table yigou (
+gid int primary key,
+yid int foreign key references yonghu (yid),
+hid int foreign key references haoma (hid),
+zcsj datetime,
+zxsj datetime,
+zhczsj datetime,
+yue float default'0'
+)
+
+go
+
+ insert into yonghu values（1,'lili','123456789123456789'）;
+ insert into yonghu values（2,'lila','123456789123456780'）;
+
+ insert into haoma values（1,'12345678912'0）;
+ insert into haoma values（2,'12345678918'0）;
+
+ insert into yigou values（1,1,1,'1998.10.10','1998.10.10','1998.10.10',80）;
+ insert into yigou values（2,2,2,'1998.10.10','1998.10.10','1998.10.10',70）;
+
+go
+
+1.修改号码编号为1，用户编号为1的余额增加100
+
+update yigou set yue = yue+100 where yid =1 and hid =1;
+
+2.在已购号码表中删除号码状态为已注销的数据
+
+delete from yigou where hid in (select hid from haoma where zhuangtai =2)
+
+3.写出查询已注册手机号的用户信息的查询语句
+
+select yid,name,sfzh from yonghu ,haoma ,yigou 
+where yonghu.yid=yigou.yid and haoma.hid=yigou.hid and zhuangtai=1
+
+4.查询出所有未注册的手机号
+
+select haoma from haoma where zhuangtai = 0
+
+5.查询出所有已注册并且余额小于10的手机号码以及用户信息
+
+select haoma,yid,name,sfzh from yonghu ,haoma ,yigou 
+where yonghu.yid=yigou.yid and haoma.hid=yigou.hid and yue <10 and zhuangtai = 1
+
+
+
+
+
+
