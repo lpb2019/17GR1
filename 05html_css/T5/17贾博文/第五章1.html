@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<table border="1" align="center" width="500"height="500">
+			<form method="post" action="" >
+			<tr>
+				<th colspan="3">证券调查示例</th>
+				 
+			</tr>
+			<tr>
+				<td>投资经验</td>
+				<td colspan="2">
+						
+						新手：<input type="radio" name="tou" value="新手">
+						中级：<input type="radio" name="tou" value="中级">
+						专家：<input type="radio" name="tou" value="专家">
+					
+				</td>
+				
+			</tr>
+			<tr>
+				<td>投资方式</td>
+				<td colspan="2">
+					股票：<input type="checkbox" name="fangshi" value="股票">
+					期贷：<input type="checkbox" name="fangshi" value="期贷">
+					基金：<input type="checkbox" name="fangshi" value="基金">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>购买股票方式</td>
+				<td colspan="2">
+					
+						<select>
+							
+							<option value="网上">网上</option>
+							<option value="手机">手机</option>
+							<option value="交易厅">交易厅</option>
+						</select>
+						
+						
+				</td>
+			</tr>
+			<tr>
+				<td>今天关注的股票</td>
+				<td colspan="2">
+				
+						<input type="text" name="n" value="" required="required" /><font color="red"> * </font> 
+						
+				
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">你对投资者的意见</td>
+				<td colspan="2" rowspan="2">
+					
+				
+					<textarea name="wenben" cols="30" rows="10"></textarea>
+						
+									
+				</td>
+			</tr>
+				<tr>
+				
+			</tr>
+			<tr>
+				<td colspan="3">
+					
+						<input type="submit" name="tijiao" value="提交">
+						<input type="reset" name="chexiao" value="撤销">
+					
+				</td>
+				
+			</tr>
+		
+			</form>
+			
+		</table>
+		
+	</body>
+</html>

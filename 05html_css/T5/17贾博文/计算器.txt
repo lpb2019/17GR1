@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function xianshi(num){
+				
+				if(t2.value==null || t2.value=="" || t2.value==undefined){
+					
+					t2.value=parseInt(num);
+				}else{
+					
+					t4.value=parseInt(num);
+				}
+			
+				
+			}
+			function fuhao(a){
+				t3.value=a;
+				
+			}
+			function ji (){
+				if(t3.value=="+"){
+					t1.value=parseInt(t2.value)+parseInt(t4.value);
+					
+				}
+				if(t3.value=="-"){
+					t1.value=parseInt(t2.value)-parseInt(t4.value);
+					
+				}
+				if(t3.value=="*"){
+					t1.value=parseInt(t2.value)*parseInt(t4.value);
+					
+				}
+				if(t3.value=="/"){
+					t1.value=parseInt(t2.value)/parseInt(t4.value);
+					
+				}
+				
+			}
+			
+			
+		</script>
+		<form>
+			
+ 	  <input type="test"  id="t1" /><br>
+ 	  <input type="test"  id="t2" />
+	<input type="test"  id="t3" size="1"/>
+	<input type="test"  id="t4" />
+			<br>
+			<input type="button" value="1" onclick="xianshi(this.value)"/>
+			<input type="button" value="2" onclick="xianshi(this.value)"/>
+			<input type="button" value="3" onclick="xianshi(this.value)"/>
+			<br >
+			<input type="button" value="4"onclick="xianshi(this.value)"/>
+			<input type="button" value="5"onclick="xianshi(this.value)"/>
+			<input type="button" value="6"onclick="xianshi(this.value)"/>
+			<br >
+			<input type="button" value="7"onclick="xianshi(this.value)"/>
+			<input type="button" value="8"onclick="xianshi(this.value)"/>
+			<input type="button" value="9"onclick="xianshi(this.value)"/>
+			<br >
+			<input type="button" value="+"onclick="fuhao(this.value)"/>
+			<input type="button" value="-"onclick="fuhao(this.value)"/>
+			<input type="button" value="*"onclick="fuhao(this.value)"/>
+			<br >
+			<input type="button" value="/"onclick="fuhao(this.value)"/>
+			<input type="button" value="0"onclick="xianshi(this.value)"/>
+			<input type="button" value="="onclick="ji(this.value)"/>
+			<br >
+			
+			
+			
+			
+		</form>
+		
+	</body>
+</html>
