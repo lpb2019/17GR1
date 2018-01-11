@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<script>
+		function xianshi(num){
+			if(t2.value=="" || t2.value==null || t2.value==undefined ){
+				t2.value=parseInt(num);
+			 }else{
+			 	 t4.value=parseInt(num);
+			 	 
+			 }
+		}
+		function fuhao(fh){
+			t3.value=fh;
+		}
+		function jjxc(){ 
+			var a,b,c;
+			a=t2.value;
+			b=t3.value;
+			c=t4.value;
+			if(b=="+"){
+				t1.value=parseInt(a) +parseInt(c) 
+			}
+			if(b=="-"){
+				t1.value=parseInt(a) -parseInt(c) 
+			}
+			if(b=="*"){
+				t1.value=parseInt(a) *parseInt(c) 
+			}
+			if(b=="/"){
+				t1.value=parseInt(a) /parseInt(c) 
+			}
+			
+			
+			
+			
+			
+			
+			
+		}
+	</script>	
+		
+		<form>
+			<input type="text" id="t1" /><br />
+			<input type="text" id="t2" />
+			<input type="text" id="t3" size="1"/>
+			<input type="text" id="t4" />
+			<br />
+			<input type="button" value="1" onclick="xianshi(this.value)" />
+			<input type="button" value="2" onclick="xianshi(this.value)" />
+			<input type="button" value="3" onclick="xianshi(this.value)" />
+			<br />
+			<input type="button" value="4" onclick="xianshi(this.value)" />
+			<input type="button" value="5" onclick="xianshi(this.value)" />
+			<input type="button" value="6" onclick="xianshi(this.value)" />
+			<br />
+			<input type="button" value="7" onclick="xianshi(this.value)" />
+			<input type="button" value="8" onclick="xianshi(this.value)" />
+			<input type="button" value="9" onclick="xianshi(this.value)" />
+			<br />
+			<input type="button" value="0" onclick="xianshi(this.value)" />
+			<input type="button" value="+"  onclick="fuhao(this.value)"/>
+			<input type="button" value="-"  onclick="fuhao(this.value)"/>
+			<br />
+			<input type="button" value="*"  onclick="fuhao(this.value)"/>
+			<input type="button" value="/"  onclick="fuhao(this.value)"/>
+			<input type="button" value="="  onclick="jjxc(this.value)"/>
+			
+			
+			
+			
+			
+		</form>
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
