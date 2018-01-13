@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		div#biaotou {
+			padding: 5px 10px 5px 10px;
+			width: 500px;
+			background: cornflowerblue;
+			border: 1px solid black;
+		}
+		div.q1 {
+			padding-right: 5px;
+			width: 100px;
+			height: 25px;
+			border: 1px solid black;
+			float: left;
+		}
+		div.s1 {
+			padding-left: 5px;
+			border: 1px solid black;
+			width: 408px;
+			height: 25px;
+			float: left;
+		}
+		.jianju{
+			margin: initial ;
+		}
+		div#q6 {
+			padding-right: 5px;
+			width: 516px;
+			height: 25px;
+			border: 1px solid black;
+		}
+	</style>
+	<body>
+		<div id="">
+			<form>
+				<div id="biaotou" align="center">
+					用户注册（带
+					<font color="red">*</font>为必填内容）
+				</div>
+				<div class="q1" align="right">
+					用户名：
+				</div>
+				<div class="s1">
+					<div>
+					<input type="text" name="用户" value="" />
+					<font color="red">*</font>(不得大于20个中文字)
+					</div>
+				</div>
+			<br /><br />
+				<div class="q1" align="right">
+					密码：
+				</div>
+				<div class="s1">
+					<div class="jianju">
+					<input type="password" name="密码" value="" />
+					<font color="red">*</font>
+				</div>
+			</div>
+<br /><br />
+				<div class="q1" align="right">
+					重置密码：
+				</div>
+
+				<div class="s1">
+					<div class="jianju">
+					<input type="password" name="重置密码" value="" />
+					<font color="red">*</font>
+				</div>
+			</div>
+<br /><br />
+				<div class="q1" align="right">
+					性别：
+				</div>
+				<div class="s1">
+					<div class="jianju">
+					男：<input type="radio" name="男" value="男"/> 
+					女：   <input type="radio" name="男" value="女" />
+				</div>
+				</div>
+<br /><br />
+				<div class="q1" align="right">
+					年龄：
+				</div>
+				<div class="s1">
+					<div class="jianju">
+					<select name="province">
+						<option value="10" selected="selected">10</option>
+						<option value="18">18</option>
+					</select>
+				</div>
+				</div>
+<br /><br />
+				<div id="q6" align="center">
+					<input type="submit" name="but" value="重置" />
+					<input type="submit" name="sub" value="提交" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
