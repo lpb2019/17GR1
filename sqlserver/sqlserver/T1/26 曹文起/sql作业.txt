@@ -1,0 +1,57 @@
+    	--create database  shoujihaoma
+   	create table users(
+	uid int primary key,
+	uname nvarchar(10) not null,
+	idcard varchar(18) unique
+	)
+	create table phone(
+	pid int primary key,
+	phone varchar(11) unique not null,
+	zhuangtai int not null 
+	)
+	create table buyphone(
+	pid int not null foreign key references phone(pid),
+	uid int not null foreign key references users(uid),
+	zhuce datetime,
+	zhuxiao datetime,
+	chongzhi datetime,
+	money float default 0
+	)
+
+
+	insert into users values(1001,'张三','11111111111')
+	insert into users values(1002,'李四','11111111112')
+	insert into users values(1003,'赵亮','11111111113')
+	insert into users values(1004,'王明','11111111114')
+	insert into phone values(1,'13323451234',0)
+	insert into phone values(2,'15523567857',1)
+	insert into phone values(3,'18823344467',2)
+	insert into phone values(4,'13455666767',1)
+	insert into buyphone values(1,1001,2010-01-18,2018-01-01,null,0)
+	insert into buyphone values(2,1002,'2010-01-11',null,'2010-10-01',38.5)
+	insert into buyphone values(3,1003,'2010-01-12','2017-10-11','2016-04-21',25)
+	insert into buyphone values(4,1004,'2010-01-01',null,'2015-02-12',55)	
+	insert into buyphone values(4,1004,'2010-01-01',null,'2015-02-13',45)	
+
+
+	--修改号码编号为1，用户编号为1001的增加100
+	--update buyphone set money=money+100 where pid=1 and uid=1001 
+	--在已购表中删除号码状态已注销的数据
+	--delete from buyphone where pid in (select pid from phone where zhuangtai=2)
+	--写出查询已注册手机号码的信息
+	--select*from users where uid in(select uid from  buyphone where pid in
+	--(select pid from phone where zhuangtai=1) )
+	--select*from users u
+	--inner join buyphone b on u.uid=b.uid
+	--inner join phone p on p.pid=b.pid
+	--where p.zhuangtai=1
+	--查询出所有未注册的手机号码
+	--select phone from phone where zhuangtai=0
+	--七、查询出所有已注册并且余额小于10的手机号码以及用户信息（20分)
+	--select u.*,p.phone from users u inner join buyphone b on  u.uid=b.bid
+	--inner join phone p on p.pid=b.pid where p.zhuangtai=1 and b.money<10 
+
+
+
+
+
