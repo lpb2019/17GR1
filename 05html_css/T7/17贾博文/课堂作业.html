@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div#table{
+				background-color: antiquewhite;
+				width: 500px;
+				height: 500px;
+			}
+			#biaotou{
+				background-color: aqua;
+				padding-left:25% ;
+				border: 1px black solid;
+				font-size: 20px;
+			}
+			div.danyuange1{
+				border: 1px black solid;
+				width: 100px;
+				height: 30px;
+				padding-left:30px ;
+				float: left;
+			}
+			div.danyuange2{
+				border: 1px black solid;
+				width: 360px;
+				height: 30px;
+				/*padding-left: 20% ;*/
+				float: left;
+				
+			}
+			.juli{
+				margin-left:5px ;
+			}
+			.zuihou{
+				
+				border: 1px black solid;
+				width: 462px;
+				height: 30px;
+				padding-left:30px ;
+				float: left;
+				
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+	<form action="url" method="get">
+		<div id="table">
+			<!--表头-->
+			<div id="biaotou">
+			<!--<center></center>-->	
+			用户注册（带<font color="red">*</font>为必填内容）
+			</div>
+			<!--body-->
+			<div id="body">
+				<!--第一行-->
+				<div class="danyuange1">
+					用户名：
+				</div>
+				<div class="danyuange2">
+					<div class="juli">
+						<input type="text" name="zhanghao" />
+						<font color="red">*</font>
+						(不得大于20个中文字)
+					</div>
+
+				</div>
+				<!--第二行-->
+				<div class="danyuange1">
+					密码：
+				</div>
+				<div class="danyuange2">
+					<div class="juli">
+						<input type="password" name="mima" />
+					
+					</div>
+
+				</div>
+				<!--第三行-->
+				<div class="danyuange1">
+					密码重置：
+				</div>
+				<div class="danyuange2">
+					<div class="juli">
+						<input type="password" name="mima" />
+					
+					</div>
+
+				</div>
+		
+			<div class="danyuange1">
+					性别：
+				</div>
+				<div class="danyuange2">
+					<div class="juli">
+						
+						 男：<input type="radio" name="xingbie" value="男">
+		      女：<input type="radio" name="xingbie" value="女">
+					</div>
+
+				</div>
+			
+			<div class="danyuange1">
+					年龄：
+				</div>
+				<div class="danyuange2">
+					<div class="juli">
+				<select>
+				<option value="10" selected="selected">10</option>
+				<option value="11" selected="selected">11</option>
+				<option value="12" selected="selected">12</option>
+				<option value="13" selected="selected">13</option>
+				<option value="14" selected="selected">14</option>
+			</select>
+
+					</div>
+
+				</div>
+			
+			<div class="zuihou">
+					
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           	<input type="submit" name="sub"  value="提交" />
+           	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           			<input type="reset" name="res"  value="重置" />
+	
+
+				</div>
+         
+		<from/>
+	</body>
+</html>
