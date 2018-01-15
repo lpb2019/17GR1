@@ -1,0 +1,70 @@
+﻿create database 系统
+
+用户表
+用户编号	整型	主键
+姓名	字符型	
+身份证号	字符型	唯一，长度为18
+create table Users(
+sid int primary key identity(1,1),
+snam nvarchar(10) not null check(len(snam)>1),
+id nvarchar(18) not null unique check(len(id)=18)
+)
+
+号码表
+号码编号	整型	主键
+手机号码	字符型	唯一，长度为11
+号码状态	整型	0(未注册)1(已注册)2(已注销)
+create table Number(
+cid int primary key identity(1,1),
+tel nvarchar(11) null unique check(len(tel)=11),
+state int not null
+)
+
+已购号码表
+号码编号	整型	外键引用号码表
+用户编号	整型	外键引用用户表
+注册时间	日期型	
+注销时间	日期型	
+最后充值时间	日期型	
+余额	浮点型	默认为0
+create table Purchase(
+scid int primary key identity(1,1),
+cid int foreign key references Number(cid),
+sid int foreign key references Users(sid),
+reg detetime null,
+can detetime null,
+ups detetime null,
+bal decimal(5,2) not null default'0'
+)
+
+二、	插入数据，每张表至少两条数据(10分)
+insert into Users(snam,id) values('张三','123456789123456780')
+insert into Users(snam,id) values('李四','123456789123456781')
+insert into Users(snam,id) values('王五','123456789123456782')
+insert into Users(snam,id) values('麻六','123456789123456783')
+insert into Users(snam,id) values('肖七','123456789123456784')
+insert into Number(tel,state) values('12345678900','0')
+insert into Number(tel,state) values('12345678901','1')
+insert into Number(tel,state) values('12345678902','2')
+insert into Number(tel,state) values('12345678903','1')
+insert into Number(tel,state) values('12345678904','0')
+insert into Purchase(cid,sid,reg,can,ups,bal) values('1','1','1999-01-01','1999-02-01','1999-01-09','0')
+insert into Purchase(cid,sid,reg,can,ups,bal) values('2','2','1999-01-01','1999-03-01','1999-02-02','1')
+insert into Purchase(cid,sid,reg,can,ups,bal) values('3','3','1999-01-01','1999-04-01','1999-03-03','2')
+insert into Purchase(cid,sid,reg,can,ups,bal) values('4','4','1999-01-01','1999-05-01','1999-04-04','3')
+insert into Purchase(cid,sid,reg,can,ups,bal) values('5','5','1999-01-01','1999-06-01','1999-05-05','4')
+三、	修改号码编号为1，用户编号为1的余额增加100（10分）
+update Purchase set bal=bal+100 where cid=1 
+四、	在已购号码表中删除号码状态为已注销的数据（10分）
+delete from Purchase where cid in(select cid from Number where state=2) 
+五、	写出查询已注册手机号的用户信息的查询语句(10分)
+select u.snam,u.id from Users u,Number n,Purchase p where u.sid=p.sid and n.cid=p.cid and state=1
+六、	查询出所有未注册的手机号(10分)
+select tel from Number where state=0
+七、	查询出所有已注册并且余额小于10的手机号码以及用户信息（20分）
+select u.snam,u.id,n.tel from Users u,Number n,Purchase p where u.sid=p.sid and n.cid=p.cid and (state=1 and bal<10)
+
+
+
+
+

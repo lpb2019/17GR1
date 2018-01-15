@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" lang="javascript">
+var clearmsg = false;
+var ispoint = true;
+function show(obj){
+	var data =	obj.value;
+	var text = document.getElementById("text");
+	if(clearmsg){
+		text.value = "";
+		clearmsg=false;
+	}
+	if(data == "+" || data == "-" || data == "*" || data == "/"){
+		ispoint = true;
+	}
+	if(data == "0" && text.value == "0"){
+		text.value = parseInt(text.value) + 0;	
+	}else if(text.value == "0" && data != "+" && data != "-" && data != "*" && data != "/"){
+		text.value = parseInt(text.value) + parseInt(data);
+	}else{
+		text.value += data;
+	}
+}
+//计算结果
+function getResult(){
+	var data = document.getElementById("text");
+	try{
+		ispoint = true;
+		data.value = eval(data.value);
+		clearmsg = true;
+		//alert(ispoint);
+	}catch(err){
+		alert("这怎么算!");
+		data.value = "0";
+	}
+}
+
+function point(){
+	var p = document.getElementById(".");
+	var text = document.getElementById("text");
+	
+	if(ispoint){
+		text.value += p.value;
+		ispoint = false;
+	}
+		
+}
+
+function funclear(){
+	var a = document.getElementById("text").value = "0";
+	clearmsg = false;
+	ispoint = true;
+
+}
+
+function funback(){
+	var text = document.getElementById("text");
+	if(text.value == "0" || text.value == ""){
+		text.value = "0";
+	}else{
+		document.getElementById("text").value=document.getElementById("text").value.slice(0,-1);
+	}
+}
+</script>
+
+</head>
+<body>
+
+			<table> 
+	<tr >
+		<form name="computer">
+
+		<input type="text" id="text" name="text"  disabled="disabled" value="0">
+			<tr>
+				<td> 
+				<input type="button" value="1"   onclick="show(this)">
+				<input type="button" value="2"   onclick="show(this)">
+				<input type="button" value="3"   onclick="show(this)">
+				<input type="button" value="+"   onclick="show(this)">
+				</td>
+				<tr> 
+				<td> 
+				<input type="button" value="4"   onclick="show(this)">
+				<input type="button" value="5"   onclick="show(this)">
+				<input type="button" value="6"   onclick="show(this)">
+				<input type="button" value="-"   onclick="show(this)">
+				</td>
+				</tr>
+				<tr> 
+				<td> 
+				<input type="button" value="7"   onclick="show(this)">
+				<input type="button" value="8"   onclick="show(this)">
+				<input type="button" value="9"  onclick="show(this)">
+				<input type="button" value="*" onclick="show(this)">
+				</td>
+				</tr>
+				<tr> 
+				<td>
+				<input type="button" value="0"   onclick="show(this)">
+				<input type="button" value="C"   onclick="funclear()">
+				<input type="button" value="/"  onclick="show(this)">
+				<input type="button" value="="  onclick="getResult()">
+
+				</td>
+				</tr>
+			</tr>
+			</table>
+	</tr>
+		</form>
+	</body>
+</html>
