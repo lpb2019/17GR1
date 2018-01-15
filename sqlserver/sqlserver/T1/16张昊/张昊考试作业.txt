@@ -1,0 +1,63 @@
+create database kaoshi
+	create table yonghu(
+	id int primary key identity(1,1),
+	name nvarchar(20) not null,
+	sfz nvarchar(20) not null unique check(len(sfz)=18)
+	)
+
+	create table haoma(
+	id int primary key identity(1,1),
+	haoma nvarchar(20) check(len(haoma)=11),
+	zhuangtai int 
+	)
+
+	create table yigouhaoma(
+	iid int primary key identity(1,1),
+	yonghuid int foreign key references yonghu(id),
+	haomaid int foreign key references haoma(id),
+	zhuceshijian datetime,
+	zhuxiaoshijian datetime,
+	zuihouchongzhi datetime,
+	yue decimal default 0
+	)
+******************
+insert into yonghu(name,sfz) values('张三1','132456789123456781')
+insert into yonghu(name,sfz) values('张三2','132456789123456782')
+insert into yonghu(name,sfz) values('张三3','132456789123456783')
+insert into yonghu(name,sfz) values('张三4','132456789123456784')
+insert into yonghu(name,sfz) values('张三5','132456789123456785')
+insert into yonghu(name,sfz) values('张三6','132456789123456786')
+
+insert into haoma(haoma,zhuangtai) values('12345678991','0')
+insert into haoma(haoma,zhuangtai) values('12345678992','1')
+insert into haoma(haoma,zhuangtai) values('12345678993','2')
+insert into haoma(haoma,zhuangtai) values('12345678994','0')
+insert into haoma(haoma,zhuangtai) values('12345678995','1')
+insert into haoma(haoma,zhuangtai) values('12345678996','2')
+
+insert into yigouhaoma(zhuceshijian,zhuxiaoshijian,zuihouchongzhi,yue) values
+('2017-01-02','2017-08-09','2017-08-01','20')
+insert into yigouhaoma(zhuceshijian,zhuxiaoshijian,zuihouchongzhi,yue) values
+('2017-03-02','2017-11-09','2017-10-01','60')
+insert into yigouhaoma(zhuceshijian,zhuxiaoshijian,zuihouchongzhi,yue) values
+('2017-04-02','2017-06-10','2017-5-30','6')
+insert into yigouhaoma(zhuceshijian,zhuxiaoshijian,zuihouchongzhi,yue) values
+('2017-05-02','2017-08-30','2017-08-25','100')
+insert into yigouhaoma(zhuceshijian,zhuxiaoshijian,zuihouchongzhi,yue) values
+('2017-06-02','2017-08-11','2017-08-06','50')
+insert into yigouhaoma(zhuceshijian,zhuxiaoshijian,zuihouchongzhi,yue) values
+('2017-07-02','2017-12-09','2017-12-01','7')
+
+三、	修改号码编号为1，用户编号为1的余额增加100（10分
+ update yigouhaoma set yue=yue+100 where haomaid = 1 and yonghuid=1
+四、	在已购号码表中删除号码状态为已注销的数据
+ delete from yigouhaoma where haomaid in
+ (select id from haoma where zhuangtai=2)
+五、	写出查询已注册手机号的用户信息的查询语句(10分)
+select y.name,y.sfz,h.haoma from yonghu y,haoma h,yigouhaoma yg 
+where y.id = yg.yonghuid and h.id = yg.haomaid and h.zhuangtai = 1 
+六、	查询出所有未注册的手机号(10分
+select haoma from haoma where zhuangtai = 0
+七、	查询出所有已注册并且余额小于10的手机号码以及用户信息
+select y.name,y.sfz,h.haoma from yonghu y,haoma h,yigouhaoma yg where
+y.id = yg.yonghuid and (h.id = yg.haomaid and h.zhuangtai=1 and yg.yue<10)
