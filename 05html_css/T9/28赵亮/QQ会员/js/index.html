@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			
+			
+			.div {
+				width: 500px;
+				height: 400px;
+				background-color: beige;
+				left: 50%;
+				top: 50%;
+				margin-left: -250px;
+				margin-top: -200px;
+				position: fixed;
+			}
+			b{
+				margin-left: 200px;
+				margin-top: px;
+			}
+			.div1 {
+				width: 500px;
+				margin-left: 31px;
+			}
+			
+			 input:valid {
+				
+				border:solid green 1px;
+			}
+			
+			 input:invalid {
+				border:solid red 1px;
+			
+			}
+			
+			 input:focus {
+				border:solid cyan 4px;
+			}
+			
+			.div2 {
+				size: 500px;
+				margin-left: 10px;
+			}
+			
+			.div3 {
+				width: 150px;
+				height: 60px;
+				margin-left: 175px;
+			}
+			
+			.di {
+				width: 150px;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div">
+			<h1><b>用户注册</b></h1>
+			<form>
+				<div class="div1">
+					<font color="red">*</font>昵称：<input type="text" class="biao" placeholder="可以是英文也可以是中文" size="20px" required="required">
+				</div>
+				<br />
+				<div class="div1">
+					<font color="red">*</font>密码：<input type="password" class="biao" name="密码" placeholder="长度为6-16个字符" required="required" />
+					<font color="blue">忘记密码时可以用手机号找回密码</font>
+				</div>
+				<br />
+				<div class="div2">
+					电话号码：<input type="number" class="biao" pattern="^[1]{11}">
+				</div>
+				<br />
+				<div class="div1">
+					<font color="red">*</font>邮箱： <input type="email" class="biao" required="required">
+				</div>
+				<br />
+				<div class="div1">
+					年龄：<input class="di" type="number" min="12" max="120" width="150px"/>
+				</div>
+				<br />                   
+				<div class="div3">
+					<input type="image" src="../img/捕获.PNG">
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
