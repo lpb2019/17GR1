@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>QQ会员注册页面</title>
+		<style type="text/css">
+			.top-div1 {
+				position: fixed;
+				background-color: bisque;
+				top: 50%;
+				left: 50%;
+				width: 700px;
+				height: 500px;
+				font-size: 20px;
+				margin-top: -150px;
+				margin-left: -320px;
+				overflow: hidden;
+				text-align: center;
+			}
+			
+			.top-form {
+				margin-left: -120px;
+			}
+			
+			.t1 {
+				margin-left: 27px;
+			}
+			
+			.t2 {
+				width: 220px;
+				height: 25px;
+				margin-top: 10px;
+			}
+			
+			.t3 {
+				margin-left: 158px;
+			}
+			
+			.t4 {
+				margin-top: 30px;
+			}
+			input:valid {
+				border: solid green 1px;
+			}
+			
+			input:invalid {
+				border: solid red 1px;
+			}
+			
+			input:focus {
+				border: solid aqua 1px;
+			}
+			
+			p {
+				left: 0px;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top-div1">
+			<form class="top-form" action="" method="get">
+				<p><b>用户注册</b></p>
+				<hr size="2px" width="100%" />
+				
+				<font class="t1" color="red">*</font>
+				昵称：<input class="t2" type="text" placeholder="英文、数字长度为6-10个字符" pattern="[a-zA-z0-9]{6,10}" required="required" name="tx" /><br />
+
+				<font class="t1" color="red">*</font>
+				密码：<input class="t2" type="text" placeholder="长度为6-16个字符" required="required" pattern="[a-zA-z0-9]{6,16}" name="te" /><br />
+
+				<font class="t3" color="red">&nbsp;&nbsp;</font>
+				手机号码：<input class="t2" type="text" name="tt" pattern="[0-9]{11}" />
+				<font size="1">忘记密码时可用手机号找回密码</font><br />
+
+				<font class="t1" color="red">*</font>
+				邮箱：<input class="t2" type="email" name="email" required="required" /><br />
+
+				<font class="t1" color="red">&nbsp;&nbsp;</font>
+				年龄：<input class="t2" type="number" name="ber" min="12" max="120" step="1" /><br />
+
+				<input class="t4" type="image" src="img/aaaa.PNG" width="150px" name="ic" value="提交" />
+			</form>
+		</div>
+	</body>
+
+</html>
