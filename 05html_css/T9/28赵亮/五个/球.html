@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			@font-face {
+				font-family:'LigatureSymbols';
+				src: url('../fonts/LigatureSymbols.eot');
+				src: url('../fonts/LigatureSymbols.svg');
+				src: url('../fonts/LigatureSymbols.ttf');
+				src: url('../fonts/LigatureSymbols.woff');
+			}
+			a{
+				text-decoration: none;
+			}
+			div{
+			
+				width: 1200px;
+				height: 220px;
+				margin: 100px auto;
+			}
+			ul{
+				list-style-type: none;
+			}
+			li{
+				width: 200px;
+				height: 220px;
+				float: left;
+				margin-left: -50px;
+				text-align: center;
+				
+			}
+			.span {
+				width: 200px;
+				height: 200px;
+				background-color: cornflowerblue;
+				border: solid red 4px;
+				border-radius: 50%;
+				float: left;
+			}
+			.span1 {
+				width: 200px;
+				height: 200px;
+				background-color: bisque;
+				border: solid red 4px;
+				border-radius: 50%;
+				float: left;
+			}
+			.span2 {
+				width: 200px;
+				height: 200px;
+				background-color: brown;
+				border: solid red 4px;
+				border-radius: 50%;
+				float: left;
+			}
+			.span3 {
+				width: 200px;
+				height: 200px;
+				background-color: chartreuse;
+				border: solid red 4px;
+				border-radius: 50%;
+				float: left;
+			}
+			.span4 {
+				width: 200px;
+				height: 200px;
+				background-color: gold;
+				border: solid red 4px;
+				border-radius: 50%;
+				float: left;
+			}
+			
+			.span:hover,.span1:hover, .span3:hover,.span4:hover ,.span2:hover {
+				
+				-webkit-transform: scale(1.1);
+				transition: all 0.4s linear;
+				opacity: 0.6;
+			}
+			.span:hover{
+				background-color:bisque ;
+			}
+			.span1:hover{
+				background-color:brown ;
+			}
+			.span2:hover{
+				background-color:chartreuse ;
+			}
+			.span3:hover{
+				background-color:gold ;
+			}
+			.span4:hover{
+				background-color:cornflowerblue;
+			}
+			font{
+				font-size: 30px;
+				 text-align: center;
+				 display: block;
+				 font-family: 'LigatureSymbols';
+				 margin-top:130px;
+				 
+				 			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="span">	<font>房子</font></span>
+					
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="span1">
+							<font>房子</font>
+						</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="span2"><font>房子</font></span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="span3"><font>房子</font></span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="span4"><font>房子</font></span>
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
