@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.div1{
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+	border: solid 1px red;
+	-webkit-perspective: 1200;
+	-webkit-transform-style: preserve-3d;
+}
+.div2{
+	background: url(img/phone.jpg) no-repeat;
+	width: 300px;
+	height: 400px;
+	margin:auto;
+	margin-top: 200px;
+	box-shadow: -5px 5px 20px black;
+	-webkit-transform-origin: 50% 50% 100px;
+	-webkit-transform: rotateX(60deg) rotateY(3deg) rotateZ(-25deg);
+}
+.div2:hover{
+	-webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	box-shadow: -100px 100px 100px white;
+	transition: all 1s linear;
+}

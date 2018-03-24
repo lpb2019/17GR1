@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.div1{
+	width: 100%;
+	height: 700px;
+	background-color: ;
+	margin: 0 auto;
+	-webkit-animation: beijing 8s linear infinite alternate;
+}
+@-webkit-keyframes beijing{
+	0%{
+		background-color: red;
+	}
+	15%{
+		background-color: orange;
+	}
+	30%{
+		background-color: yellow;
+	}
+	45%{
+		background-color: green;
+	}
+	60%{
+		background-color: cyan;
+	}
+	75%{
+		background-color: blue;
+	}
+	90%{
+		background-color: darkmagenta;
+	}
+	100%{
+		background-color: black;
+	}
+}
+.div1 a{
+	display: block;
+	position: absolute;
+	width: 157px;
+	height: 227px;
+	margin: 0 auto;
+	background: url(img/balloon.png);
+	
+	-webkit-animation: qiqiu 8s linear infinite alternate;
+}
+@-webkit-keyframes qiqiu{
+0%{
+	left: -157px;
+	-webkit-transform: rotate(-30deg);
+}
+25%{
+	-webkit-transform: rotate(-30deg);
+}
+50%{
+	-webkit-transform: translate(0px,100px);
+}
+75%{
+	-webkit-transform: translate(-10px,-200px);
+}
+100%{
+	left: 100%;
+	-webkit-transform: rotate(-30deg);
+}
+}
+.div2{
+	position: absolute;
+}
+.s1{
+	width: 100%;
+	height: 300px;
+	background: url(img/groundFront.png) repeat-x;
+	z-index: 90;
+	top: 400px;
+}
+.s2{
+	width: 100%;
+	height: 300px;
+	background: url(img/groundMid.png) repeat-x center;
+	z-index: 80;
+	top: 400px;
+}
+.s3{
+	width: 100%;
+	height: 300px;
+	background: url(img/groundBack.png) repeat-x ;
+	z-index: 60;
+	top: 400px;
+}
+#a1{
+	width: 100px;
+	width: 60px;
+	background: url(img/friendshipShell.png) no-repeat; 
+	top: 110px;
+	left: 100px;
+}
