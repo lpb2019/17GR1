@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.div1 {
+	background-color: black;
+	width: 100%;
+	height: 150px;
+	opacity: 0.6;
+	position:fixed;
+	z-index: 100;
+}
+
+.img1 {
+	margin-top: 15px;
+	margin-left: 80px;
+	float: left;
+}
+
+.div1 a{
+	color: aliceblue;
+	text-decoration: none;
+	font-size: 20px;
+	float: left;
+	margin-top: 55px;
+	margin-left: 20px;
+}
+
+.div1 a:hover {
+	color: red;
+}
+
+.a1 {
+	border: solid gold 2px;
+	border-radius: 35px;
+	padding:10px 20px;
+	margin-top: 45px;
+	color: gold;
+	margin-left: 50px;
+}
+
+.a1:hover {
+	background: gold;
+	color: aliceblue;
+}
+.div2 img:nth-of-type(1){
+	position: absolute;
+}
+.div2 img:nth-of-type(2){
+	position: absolute;
+	top: 240px;
+	z-index: 10;
+}
+.div3 img:nth-of-type(1){
+	position: absolute;
+	top: 830px;
+}
+.div3 img:nth-of-type(2){
+	position: absolute;
+	top: 860px;
+	z-index: 5;
+}
+.div3 a{
+	position:absolute;
+	background:url(../img/sprites_function_feature.png) no-repeat 100px 100px;
+	width:100px;
+	height:100px;
+}
+.div3 a:nth-of-type(1){
+	background-position:0px 0px;
+	top: 1350px;
+	left: 580px;
+	z-index: 6;
+}
+.div3 a:nth-of-type(2) {
+	background-position:0px -110px;
+	top: 1350px;
+	left: 820px;
+	z-index: 6;
+	transform:scale(1.3);
+}
+.div3 a:nth-of-type(3) {
+	background-position:0 -220px;
+	top: 1220px;
+	left: 1020px;
+	z-index: 6;
+}
+.div3 a:nth-of-type(4) {
+	background-position:0 -330px;
+	z-index:1;
+	top: 1100px;
+	left: 900px;
+	transform:scale(0.8);
+}
+.div3 a:nth-of-type(5) {
+	background-position:0 -440px;
+	top: 1000px;
+	left: 750px;
+	z-index: 1;
+	transform:scale(0.6);
+}
+.div3 a:nth-of-type(6) {
+	background-position:0 -550px;
+	z-index:1;
+	top: 1020px;
+	left: 550px;
+	transform:scale(0.4);
+}
+.div3 a:nth-of-type(7) {
+	background-position:0 -880px;
+	top: 1280px;
+	left: 420px;
+	transform:scale(0.7);
+}
+.div3 a:nth-of-type(8) {
+	background-position:0 -770px;
+	top: 1160px;
+	left: 360px;
+	transform:scale(0.6);
+}
+.div3 a:nth-of-type(9) {
+	background-position:0 -660px;
+	top: 1040px;
+	left: 420px;
+	transform:scale(0.5);
+}
+.div4 img:nth-of-type(1){
+	position: absolute;
+	top: 1650px;
+}
+.div4 img:nth-of-type(2){
+	position: absolute;
+	top: 1730px;
+}
+.div5 img:nth-of-type(1){
+	position: absolute;
+	top: 2400px;
+}
+.div5 img:nth-of-type(2){
+	position: absolute;
+	top: 2460px;
+	z-index: 10;
+}
+.div6 img:nth-of-type(1){
+	position: absolute;
+	top: 3200px;
+}
+.div6 img:nth-of-type(2){
+	position: absolute;
+	top: 3260px;
+	left: 600px;
+}
+.div6 a{
+	position: absolute;
+	background: url(../img/sprites_makeup_feature.png)no-repeat;
+	width: 100px;
+	height: 100px;
+	z-index: 10px;
+	
+}
+.div6 a:nth-of-type(1){
+	background-position:0px 0px;
+	top: 3440px;
+	left: 980px;
+	width: 100px;
+	height: 100px;
+	z-index: 10;
+}
+.div6 a:nth-of-type(2){
+	background-position:0px -100px;
+	top: 3780px;
+	left: 1080px;
+	width: 150px;
+	height: 150px;
+	z-index: 10;
+}
+.div6 a:nth-of-type(3){
+	background-position:0px -260px;
+	top: 3700px;
+	left: 300px;
+	width: 130px;
+	height: 140px;
+	z-index: 10;
+}
+.div6 a:nth-of-type(4){
+	background-position:0px -400px;
+	top: 3640px;
+	left: 450px;
+	width: 150px;
+	height: 200px;
+	z-index: 10;
+}
+.div6 a:nth-of-type(5){
+	background-position:0px -602px;
+	top: 3540px;
+	left: 650px;
+	width: 180px;
+	height: 120px;
+	z-index: 10;
+}
+.div6 a:nth-of-type(6){
+	background-position:0px -710px;
+	top: 3640px;
+	left: 880px;
+	width: 280px;
+	height: 100px;
+	z-index: 10;
+}
