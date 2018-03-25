@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				height: 500px;
+				width: 600px;
+				background-color: darkturquoise;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			
+			.div2 {
+				height: 120px;
+				width: 10px;
+				background-color: blueviolet;
+				margin: 40px auto;
+				-webkit-animation: zhong 1s linear infinite alternate;
+			}
+			
+			.div2::after {
+				content: "";
+				display: block;
+				height: 40px;
+				width: 40px;
+				background-color: red;
+				border-radius: 50%;
+				position: relative;
+				top: 80px;
+				left: -13px;
+			}
+			
+			@-webkit-keyframes zhong {
+				from {
+					-webkit-transform: rotate(40deg);
+					-webkit-transform-origin: top center;
+				}
+				to {
+					-webkit-transform: rotate(-40deg);
+					-webkit-transform-origin: top center;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			function qw() {
+  			setInterval("qw1.innerHTML = new Date().toLocaleString()");
+			}
+		</script>
+	</head>
+
+	<body onload="qw()">
+		<h1 id="qw1"></h1>
+		<div class="div1">
+			<div class="div2">
+
+			</div>
+		</div>
+
+	</body>
+
+</html>

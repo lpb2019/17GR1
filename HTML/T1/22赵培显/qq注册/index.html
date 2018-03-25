@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				height: 100%px;
+				width: 900px;
+				text-align: center;
+				background :url(img/body.png)repeat-x ;
+			}
+			.top2{
+				background-color: azure;
+				width:20%;
+				margin-left:160px ;
+			}
+			.div1{
+				margin-left:200px ;
+			}
+			.div2{
+			
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div >
+				<img src="img/bg_chs.png" width="900px" />
+			</div>
+			
+			 <form >
+			<div class="top2"> 注册账号</div>
+			<div ><a>*昵称</a>
+			<input type="text" required="required" placeholder="只能输入中文或英文，或数字" pattern="[a-zA-Z0-9]{3,10}"/>	
+			</div>
+			<div ><a>*密码</a>
+			<input type="password" required="required" placeholder="只能输入英文，或数字" pattern="[a-zA-Z0-9]{6,16}"/>	
+			</div>
+			
+			<div class="div1"><a>手机号码</a>
+			<input type="number" required="required" placeholder="0-9" pattern="[0-9]{11}"/>忘记密码时可用手机号找回密码	
+			</div>
+			
+			<div ><a>*邮箱</a>
+			<input type="email" required="required" />	
+			</div>
+			<div><a>*年龄</a>
+			<input type="number" required="required" />	
+			</div>
+			<div class="div2">
+			<input type="submit"name="sub"  value="用户注册" />
+		</div>
+			
+			
+			
+			
+			
+			
+			</form>
+		</div>
+		
+	</body>
+</html>
