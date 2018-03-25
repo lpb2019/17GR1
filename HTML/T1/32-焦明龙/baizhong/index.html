@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.div1{
+				height: 500px;
+				width: 500px;
+				background-color: bisque;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.div2{
+				height: 100px;
+				width: 5px;
+				background-color: black;
+				margin: 0 auto;
+				
+				animation: baidong 1s linear infinite;
+				-webkit-animation: baidong 1s linear  infinite alternate;
+			}
+			.div2::after{
+				content: "";
+				display: block;
+				height: 30px;
+				width: 30px;
+				border-radius:50% ;
+				background-color: #000000;
+				margin: 0 auto;
+				position: relative;
+				left: -13px;
+				bottom: -100px;
+			}
+			
+			
+			
+			
+			@-webkit-keyframes baidong{
+				0%{
+					-webkit-transform-origin: top center;
+					-webkit-transform: rotate(30deg);
+				}
+				50%{
+					-webkit-transform-origin: top center;
+					-webkit-transform: rotate(0deg);
+				}
+				100%{
+					-webkit-transform-origin: top center;
+					-webkit-transform: rotate(-30deg);
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			function haha(){
+				setInterval("time.innerHTML = new Date().toLocaleString()")
+			}
+			
+			
+		</script>
+		
+	</head>
+	<body onload="haha()">
+		
+		<div class="div1">
+			<h2 id="time" align="center"></h2>
+			<div class="div2">
+				
+			</div>
+		</div>
+	</body>
+</html>

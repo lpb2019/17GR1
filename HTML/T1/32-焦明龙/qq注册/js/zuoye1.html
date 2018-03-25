@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/zuoye1.css" />
+	</head>
+
+	<body>
+		<div class="con">
+			<h2 class="reg-top"></h2>
+			<div class="reg-box">
+				<div class="reg-main">
+					<h3>注册账号</h3>
+					<form action="" class="reg-form">
+						<div class="reg-input">
+							<label><i>*</i>昵称：</label>
+							<input type="text" required="required" placeholder="英文，数字长度为6-10个字符" pattern="^[a-zA-Z0-9]{6,10}" />
+						</div>
+						<div class="reg-input">
+							<label><i>*</i>密码：</label>
+							<input type="password" required="required" placeholder="长度为6-16个字符" pattern="^[a-zA-Z0-9]{6,16}" />
+						</div>
+						<div class="reg-input">
+							<label><i>*</i>手机号码：</label>
+							<input type="text" required="required" pattern="[0-9]{11}" />
+							<span id="tel">忘记密码时可用手机号找回密码</span>
+						</div>
+						<div class="reg-input">
+							<label><i>*</i>邮箱：</label>
+							<input type="email" required="required" />
+						</div>
+						<div class="reg-input">
+							<label><i>*</i>年龄：</label>
+							<input type="number" required="required" />
+						</div>
+						<div class="summat-box">
+							<button id="button">立即注册</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	font-family: "微软雅黑";
+}
+h2,h3{
+	font-weight: normal;
+}
+.con{
+	width: 1000px;
+	margin: 0 auto;
+}
+.reg-top{
+	background: url(../img/QQ图片20180312092319.png) repeat-x center top;
+	height: 110px;
+}
+.reg-box{
+	height: 700px;
+	background: cornflowerblue;
+	border: 1px solid cornflowerblue;
+	border-top: 0 none;
+}
+.reg-main{
+	width: 700px;
+	margin: 0 auto;
+	padding: 1px;
+}
+.reg-main h3{
+	height: 25px;
+	line-height: 25px;
+	border-left: 3px solid yellow;
+	padding-left:10px ;
+	font-size: 18px;
+	margin-top: 80px;
+	color: #666;
+}
+.reg-form{
+	border-top: 1px solid #d7d7d7;
+	margin-top: 10px;
+}
+.reg-input{
+	height: 36px;
+	line-height: 36px;
+	margin-top: 18px;
+}
+.reg-input label{
+	float: left;
+	width: 100px;
+}
+.summat-box{
+	float: right;
+	margin: 10px 300px;
+	border: 1px solid red;
+	
+}
+
+
+
+
+
+
+
+
+
+
