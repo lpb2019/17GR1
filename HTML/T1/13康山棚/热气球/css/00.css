@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: aliceblue;
+}
+.div1{
+	width: 100%;
+	height: 650px;	
+	border: solid red 1px;
+	 -webkit-animation: tian 8s ease infinite alternate;
+}
+@-webkit-keyframes tian{
+		0%{
+			background-color: aliceblue;
+		}
+		25%{
+			background-color:blueviolet ;
+		}
+		50%{
+			background-color:#8A2BE2 ;
+		}
+		75%{
+			background-color:blue ;
+		}
+		100%{
+			background-color:black ;
+		}
+
+}
+.div1 a{
+	position: absolute;
+	top: 10%;
+	left: -200px;
+	height: 227px;
+	width: 157px;
+	background:url(../img/balloon.png);
+	animation: qiqiu 8s ease infinite alternate;
+}
+@-webkit-keyframes qiqiu{
+	0%{	
+		-webkit-transform: rotate(30deg) ;
+		
+	}
+	25%{
+		-webkit-transform: rotate(20deg) scale(1.2) ;
+		left: 25%;
+	}
+	50%{
+		-webkit-transform: rotate(30deg) scale(1.3);
+		left: 50%;
+	}
+	75%{
+		-webkit-transform: rotate(20deg) scale(1.2);
+		left: 75%;
+	}
+	100%{
+		-webkit-transform: rotate(0deg) ;
+		left: 100%;
+	}
+}
+.ground{
+	position: absolute;
+}
+.front{
+	width: 100%;
+	height:301px;
+	bottom:50px;
+	/*left: -350px;*/
+	background: url(../img/groundFront.png) repeat-x;
+	z-index: 90;
+}
+.mid{
+	width:100%;
+	height:299px;
+	bottom:50px;
+	/*left: 10px;*/
+	background: url(../img/groundMid.png) repeat-x center;
+	
+	z-index: 80;
+}
+.n1{
+	width: 500px;
+	height: 230px;
+	left: 100px;
+	top: 320px;
+	z-index: 70;
+	background: url(../img/dowEventCenter.png);
+}
+.n2{
+	width: 120px;
+	height: 265px;
+	left: 750px;
+	top: 240px;
+	z-index: 60;
+	background: url(../img/Glockenspiel.png);
+}
+.n3{
+	width: 250px;
+	height: 370px;
+	left: 320px;
+	top: 250px;
+	z-index: 80;
+	background: url(../img/friendshipShell.png);
+}
+.n4{
+	width: 85px;
+	height: 300px;
+	left: 890px;
+	top: 270px;
+	z-index: 55;
+	background: url(../img/beans.png);
+}
+.n5{
+	width: 400px;
+	height: 300px;
+	left: 1050px;
+	top: 300px;
+	z-index: 60;
+	background: url(../img/Planetarium.png) repeat scroll top left;
+}
+.back{
+	width:100%;
+	height:301px ;
+	bottom: 90px;
+	left: -50px;
+	background: url(../img/groundBack.png);
+	z-index: 60;
+}
