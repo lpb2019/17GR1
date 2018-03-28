@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: azure;
+}
+.wrap{
+	background-color: beige;
+	width: 100%;
+	height: 700px;
+	-webkit-animation:beijing 5s ease infinite alternate ;
+}
+.wrap a{
+display: block;
+background: url(../img/balloon.png);
+position: absolute;
+top: 200px;
+width:157px;
+height: 227px;
+left: -100px;
+-webkit-animation:qiuqiu 5s ease infinite alternate ;
+}
+@-webkit-keyframes qiuqiu{
+	0%{
+		
+		-webkit-transform:skew(0deg)
+		
+		
+	}
+	25%{
+		/*-webkit-transform: translateX(10px);*/
+		-webkit-transform:rotate(30deg);
+		left: 25%;
+			top: 20px;
+		
+		
+	}
+	50%{
+		/*-webkit-transform: translateX(10px);*/
+		-webkit-transform:rotate(60deg);
+			left: 50%;
+			
+		
+	}
+	100%{
+		/*-webkit-transform: translateX(10px);*/
+		-webkit-transform:rotate(30deg);
+			left: 100%;	
+			
+	}
+	
+}
+@-webkit-keyframes baiyun{
+		0%{
+		
+		-webkit-transform:translateX(0%);
+			left: 0%;
+		
+	}
+		25%{
+		
+		-webkit-transform:translateX(25%);
+			left: 25%;
+			
+		
+	}
+		50%{
+		
+		-webkit-transform:translateX(50%);
+			left: 50%;
+				top: 25px;
+		
+	}
+		100%{
+		
+		-webkit-transform:translateX(100%);
+			left: 100%;
+		
+	}
+	
+	}
+@-webkit-keyframes beijing{
+	0%{
+	background-color: blue;
+	}
+	25%{
+		background-color: #A52A2A;
+	}
+	50%{
+		background-color: black;
+		
+	}
+	100%{
+		background-color: aliceblue;
+	}
+	
+	}
+	
+.tu1{
+background: url(../img/groundFront.png) repeat-x;
+width: 100%;
+height: 301px;
+z-index: 90;
+position: absolute;
+top: 400px;
+}
+.tu2{
+background: url(../img/groundMid.png) repeat-x ;
+width: 100%;
+height: 299px;
+z-index: 80;
+position: absolute;
+top: 400px;
+}
+.tu3{
+background: url(../img/groundBack.png) repeat-x ;
+width: 100%;
+height: 281px;
+z-index: 70;
+position: absolute;
+top: 420px;	
+}
+.tu4{
+background: url(../img/dowEventCenter.png) no-repeat;
+width:520px;
+height: 229px;
+position: absolute;
+top: 350px;
+left: 10px;
+z-index: 75;
+}
+.tu5{
+background: url(../img/friendshipShell.png) no-repeat;
+width:231px;
+height: 370px;
+position: absolute;
+top: 200px;
+left: 300px;
+z-index: 85;
+}
+.tu6{
+	background: url(../img/Glockenspiel.png)no-repeat;
+	width:137px;
+height: 263px;
+position: absolute;
+top: 270px;
+left: 650px;
+z-index: 77;
+}
+.tu7{
+	background: url(../img/beans.png)no-repeat;
+	width:88px;
+height: 201px;
+position: absolute;
+top: 350px;
+left: 800px;
+z-index: 50;
+
+	
+}
+.tu8{
+background: url(../img/Planetarium.png)no-repeat;
+width:347px;
+height: 285px;
+position: absolute;
+top: 350px;
+left:950px;
+z-index: 72;
+
+	
+}
+.tu9{
+background: url(../img/skyline.png)no-repeat;
+width:523px;
+height: 147px;
+position: absolute;
+top: 400px;
+left:500px;
+z-index: 65;
+
+	
+}
+.tu10{
+	background: url(../img/cloudLarge.png)no-repeat;
+	width:302px ;
+	height: 169px;
+	position: absolute;
+	top: 30px;
+left:20px;
+-webkit-animation:baiyun 5s ease infinite alternate ;
+	
+}
+.tu11{
+	background: url(../img/cloudMedium.png) no-repeat;
+	width:150px ;
+	height:40px;
+	position: absolute;
+	top: 50px;
+    left:10px;
+-webkit-animation:baiyun2 5s ease infinite alternate ;
+	
+}
+@-webkit-keyframes baiyun2{
+		0%{-webkit-transform:rotateX(5%);
+			left: 0%;
+				top: 35px;
+			}
+			25%{-webkit-transform:rotateX(25%);
+			left:25%;
+			top: 35px;
+			
+			
+			}
+			50%{-webkit-transform:rotateX(50%);
+			left:50%;
+			top: 45px;
+			
+			
+			}
+			100%{-webkit-transform:rotateX(100%);
+			left:100%;
+			
+			
+			}
+			}
+			
+
