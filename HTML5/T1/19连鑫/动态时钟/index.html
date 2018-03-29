@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			function ht () {
+//				he.innerHTML =new Date().toLocaleString();
+				setInterval("he.innerHTML =new Date().toLocaleString()");
+			}
+		</script>
+		<style type="text/css">
+			@-webkit-keyframes wh{
+				0%{
+					transform-origin: top center;
+					-webkit-transform-origin: top center;
+					transform: rotate(30deg);
+					-webkit-transform: rotate(30deg);
+				}
+				100%{
+					transform-origin: top center;
+					-webkit-transform-origin:top center;
+					transform: rotate(-30deg);
+					-webkit-transform: rotate(-30deg);
+				}
+			}
+			.div1{
+				width: 500px;
+				height: 500px;
+				background: darksalmon;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.div2{
+				width: 20px;
+				height: 100px;
+				background: chartreuse;
+				margin: 0 auto;
+				animation: wh 1s linear infinite alternate;
+			}
+			.div2::after{
+				content: "";
+				display: block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: red;
+				position: relative;
+				top: 90px;
+				right: 0px;
+			}
+		</style>
+	</head>
+	<body onload="ht()">
+		<h1 id="he"></h1>
+		<div class="div1">
+			<div class="div2"></div>
+		</div>
+	</body>
+</html>

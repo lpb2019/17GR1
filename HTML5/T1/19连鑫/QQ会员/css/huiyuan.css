@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+.header-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	/*opacity:0.6 ;透明*/
+	width: 100%;
+	height: 90px
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-logo,.header-nav,.header-nav li,.header-right{
+	display: inline-block;
+	height: 90px;
+	vertical-align: top;
+} 
+.header-logo{
+	margin-right: 48px;
+}
+.header-nav li{
+	margin-left: 20px;
+	line-height: 90px;
+}
+.header-nav li a{
+	color: white;
+	font-size: 18px;
+}
+.header-nav li a:hover{
+	color: red;
+}
+.header-right{
+	margin-left: 40px;
+	line-height: 40px;
+}
+.header-right a{
+	color: red;
+	height: 40px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top:25px ;
+	border: solid gold 1px;
+	border-radius: 20px;
+}
+.header-right a:first-of-type{
+	width: 100px;
+}
+.header-right a:last-of-type{
+	width: 120px
+}
+.header-right a:hover{
+	background-color: gold;
+	color: white;
+}
+.footer{
+	width: 100%;
+	height: 320px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	margin-top: -5px;
+}
+.footer-nav{
+	position: relative;
+	top: 50px;
+}
+.footer-nav li{
+	color: darkgray;
+	display: inline-block;
+	width: 100px;
+	height: 85px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.footer-nav ul li span:first-of-type{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: url(../img/img/sprites_footer.png);
+}
+.footer-nav ul li:nth-child(1) span:first-of-type{
+	background-position:0 0 ;
+} 
+.footer-nav ul li:nth-child(1) span:first-of-type:hover{
+	background-position:-100px 0 ;
+} 
+.footer-nav ul li:nth-child(2) span:first-of-type{
+	background-position:0 -100px ;
+} 
+.footer-nav ul li:nth-child(2) span:first-of-type:hover{
+	background-position:-100px -100px ;
+} 
+.footer-nav ul li:nth-child(3) span:first-of-type{
+	background-position:0px -200px ;
+} 
+.footer-nav ul li:nth-child(3) span:first-of-type:hover{
+	background-position:-100px -200px ;
+} 
+.footer-nav ul li:nth-child(4) span:first-of-type{
+	background-position:0 -300px ;
+} 
+.footer-nav ul li:nth-child(4) span:first-of-type:hover{
+	background-position:-100px -300px;
+} 
+.footer-nav ul li:nth-child(5) span:first-of-type{
+	background-position:0 -400px;
+} 
+.footer-nav ul li:nth-child(5) span:first-of-type:hover{
+	background-position:-100px -400px ;
+} 
+.footer-nav ul li:nth-child(6) span:first-of-type{
+	background-position:0 -500px ;
+} 
+.footer-nav ul li:nth-child(6) span:first-of-type:hover{
+	background-position:-100px -500px ;
+} 
+.footer-nav ul li:nth-child(7) span:first-of-type{
+	background-position:0 -600px ;
+} 
+.footer-nav ul li:nth-child(7) span:first-of-type:hover{
+	background-position:-100px -600px ;
+} 
+.divv{
+	position: relative;
+	top: 90px;
+	color: darkgray;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			a{
+				text-decoration: none;
+			}
+			nav li a span:last-of-type{
+				position: relative;
+				top: 80px;
+			}
+			
+			@font-face {
+				font-family:'LigatureSymbols';
+				src: url(fonts/LigatureSymbols.svg);
+				src: url(fonts/LigatureSymbols.eot);
+				src: url(fonts/LigatureSymbols.ttf);
+				src: url(fonts/LigatureSymbols.woff);
+				/*display: block;
+				height: 50px;
+				width: 50px;*/
+			}
+			nav li a span:first-of-type{
+				font-family: 'LigatureSymbols';
+				display: block;
+				height: 50px;
+				width: 50px;
+				margin-left: 60px;
+				margin-top: 20px;
+			}
+			nav li a span:first-of-type:before{
+				content: 'home';
+				font-size: 100px;
+			}
+			nav li{
+				text-align: center;
+				display: inline-block;
+				width: 200px;
+				height: 200px;
+				background: lavender;
+				border-radius: 50%;
+				border: 10px coral solid;
+				margin-left:-50px ;
+				margin-top: 100px;
+				
+			}
+			nav li:hover{
+				color: mediumorchid;
+				background: coral;
+				border: red 10px solid;
+				transform: scale(1.3);
+				transition: all 0.5s linear;
+				z-index: 100;
+			}
+			nav li:nth-of-type(2){
+				background: #FFD700;
+				border: gray 10px solid;
+			}
+			nav li:nth-of-type(2):hover{
+				background: brown;
+				border: blueviolet 10px solid;
+			}
+			nav li:nth-of-type(3){
+				background: chocolate;
+				border: brown 10px solid;
+			}
+			nav li:nth-of-type(3):hover{
+				background: burlywood;
+				border: cornflowerblue 10px solid;
+			}
+			nav li:nth-of-type(4){
+				background: darkorchid;
+				border: darkgreen 10px solid;
+			}
+			nav li:nth-of-type(4):hover{
+				background: darkgray;
+				border: gold 10px solid;
+			}
+			nav li:nth-of-type(5){
+				background: mediumorchid;
+				border: lightslategray 10px solid;
+			}
+			nav li:nth-of-type(5):hover{
+				background: lightpink;
+				border: palegreen 10px solid;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="warp">
+			<nav>
+				<ul>
+					<li><a href=""><span></span><span>Home</span></a></li>
+					<li><a href=""><span></span><span>Home</span></a></li>
+					<li><a href=""><span></span><span>Home</span></a></li>
+					<li><a href=""><span></span><span>Home</span></a></li>
+					<li><a href=""><span></span><span>Home</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

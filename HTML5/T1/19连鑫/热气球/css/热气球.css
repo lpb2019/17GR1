@@ -1,0 +1,189 @@
+body{
+	background: azure;
+	z-index: 0;
+}
+@-webkit-keyframes qq{
+	0%{
+		left: -200px;
+		transform: rotate(30deg);
+		-webkit-transform: rotate(30deg);
+	}
+	20%{
+		transform: rotate(60deg);
+		left: 20%;
+		-webkit-transform: rotate(60deg);
+	}
+	40%{
+		transform: rotate(90deg);
+		left: 40%;
+		-webkit-transform: rotate(90deg);
+	}
+	60%{
+		transform: rotate(60deg);
+		left: 60%;
+		-webkit-transform: rotate(60deg);
+	}
+	80%{
+		transform: rotate(30deg);
+		left: 80%;
+		-webkit-transform: rotate(30deg);
+	}
+	100%{
+		left: 100%;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes yuncai{
+	0%{
+		-webkit-transform: translateX(-20%);
+		transform: translateX(-20%);
+	}
+	30%{
+		-webkit-transform: translateX(20%);
+		transform: translateX(20%);
+	}
+	60%{
+		-webkit-transform: translateX(60%);
+		transform: translateX(60%);
+	}
+	100%{
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+}
+@-webkit-keyframes tiankong{
+	0%{
+		
+		background-color:blanchedalmond ;
+	}
+	50%{
+		
+		background-color: darkblue;
+	}
+	100%{
+		
+		background-color:blanchedalmond ;
+	}
+}
+.div1{
+	width: 100%;
+	height: 600px;
+	background-color: blanchedalmond;
+	z-index: 1;
+	-webkit-animation: tiankong 10s linear 3s infinite alternate;
+	animation: tiankong 10s linear 3s infinite alternate;
+}
+.div1 a{
+	width: 157px;
+	height: 227px;
+	display: block;
+	background: url(../img/balloon.png);
+	z-index: 100;
+	position: absolute;
+	left: -200px;
+	top: 10%;
+	/*transform: rotate(30deg);*/
+	animation: qq 10s ease 1s infinite alternate;
+}
+.ground{
+	position: absolute;
+}
+.div2{
+	height: 300px;
+	width: 100%;
+	background:url(../img/groundFront.png)repeat-x ;
+	top: 310px;
+	z-index: 90;
+}
+.div3{
+	height: 300px;
+	width: 100%;
+	background:url(../img/groundMid.png)repeat-x ;
+	background-position:7%;
+	top: 310px;
+	z-index: 80;
+}
+.div4{
+	height: 300px;
+	width: 100%;
+	background:url(../img/groundBack.png)repeat-x ;
+	background-position: center;
+	top: 310px;
+	z-index: 70;
+}
+.div5{
+	height: 200px;
+	width: 100%;
+	background: url(../img/Planetarium.png) no-repeat;
+	top:250px;
+	left: 70%;
+	z-index: 75;
+}
+.div6{
+	height: 200px;
+	width: 100%;
+	background: url(../img/dowEventCenter.png) no-repeat;
+	top: 250px;
+	left: 5%;
+	z-index: 75;
+}
+.div7{
+	height: 300px;
+	width: 100%;
+	background: url(../img/friendshipShell.png) no-repeat;
+	top: 150px;
+	left: 20%;
+	z-index: 85;
+}
+.div8{
+	height: 200px;
+	width: 100%;
+	background: url(../img/Glockenspiel.png) no-repeat;
+	background-position: center;
+	top: 250px;
+	z-index: 75;
+}
+.div9{
+	height: 180px;
+	width: 100%;
+	background: url(../img/beans.png) no-repeat;
+	left: 60%;
+	top: 230px;
+	z-index: 69;
+}
+.div10{
+	height: 150px;
+	width: 100%;
+	background: url(../img/skyline.png) no-repeat;
+	background-position: center;
+	top: 300px;
+	z-index: 68;
+}
+.div11{
+	height: 100px;
+	width: 100%;
+	background: url(../img/cloudLarge.png) no-repeat;
+	top: 150px;
+	left: 20%;
+	animation: yuncai 10s ease 3s infinite alternate;
+	-webkit-animation: yuncai 10s ease 3s infinite alternate;
+}
+.div12{
+	width: 100%;
+	height: 100px;
+	background: url(../img/cloudMedium.png) no-repeat;
+	background-position: right;
+	top: 80px;
+	animation: yuncai 10s ease 3s infinite alternate;
+	-webkit-animation: yuncai 10s ease 3s infinite alternate;
+}
+.div13{
+	height: 100px;
+	width: 100%;
+	background: url(../img/cloudSmall.png) no-repeat;
+	background-position: center;
+	top: 30px;
+	animation: yuncai 10s ease 3s infinite alternate;
+	-webkit-animation: yuncai 10s ease 3s infinite alternate ;
+}

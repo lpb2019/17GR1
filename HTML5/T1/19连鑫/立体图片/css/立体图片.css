@@ -1,0 +1,33 @@
+*{
+	
+	margin: 0;
+	padding: 0;
+}
+.div1{
+	width: 600px;
+	height: 600px;
+	margin: 100px auto;
+	border: solid red 1px;
+	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+.phone{
+	display: block;
+	height: 450px;
+	width: 300px;
+	background: url(../img/phone.jpg);
+	margin: 50px auto 0 auto;
+	box-shadow: -10px 10px 10px black;
+	transform: rotateX(50deg) rotateY(-3deg)rotateZ(30deg);
+	-webkit-transform: rotateX(50deg) rotateY(-3deg)rotateZ(30deg);
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	transition: all 1s ease-out; 
+}
+.phone:hover{
+	box-shadow: -100px 100px 10px white;
+	transform: rotate3D(0,0,0,0deg);
+	-webkit-transform: rotate3D(0,0,0,0deg);
+}

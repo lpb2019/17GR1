@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				background-image: url(body.png);
+				background-repeat: repeat-x;
+			}
+			/*.div1{
+				width: 954px;
+				height: 80px;
+				background-color: white ;
+				position: absolute;
+				left: 173px;
+				
+			}*/
+			
+			.div2 {
+				width: 954px;
+				height: 600px;
+				background-color: white;
+				position: absolute;
+				left: 173px;
+				color: #A9A9A9;
+			}
+			
+			.div3 {
+				position: relative;
+				top: 130px;
+				left: 320px;
+			}
+			
+			input:valid {
+				border: solid #008000;
+			}
+			
+			input:invalid {
+				border: solid #FF0000;
+			}
+			
+			input:focus {
+				border: 3px solid #90EE90;
+			}
+			
+			input {
+				width: 200px;
+				height: 30px;
+			}
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form method="get" action="url">
+			<div>
+				<img src="bg_chs.png" />
+			</div>
+			<!--<div class="div1">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>-->
+			<div class="div2">
+				<div style="position: relative; top: 80px;left: 100px;">
+					&para;&nbsp;注册账号<br />
+					<hr width="700" size="3" color="#A9A9A9" />
+				</div>
+			</div>
+			<div class="div3">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">*</font>昵称:
+				<input type="text" placeholder="英文、数字长度为6-10个字符" required="required" pattern="[A-Za-z0-9]{6,10}" /><br /><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">*</font>密码:
+				<input type="password" placeholder="长度为6-16个字符" required="required" pattern="[A-Za-z0-9]{6,16}" /><br /><br />&nbsp;&nbsp;手机号码:
+				<input type="tel" pattern="[0-9]{11}" />
+				<font size="2" color="#A9A9A9">忘记密码时可用手机号找回密码</font><br /><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">*</font>邮箱:
+				<input type="email" required="required" /><br /><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年龄:
+				<input type="number" min="12" />
+			</div>
+			<div style="position: relative;top: 200px;left: 800px;" >
+				<input type="submit" style="background-color: firebrick;width: 200px;height: 50px;border: 0px;cursor: pointer;" value="立即注册" />
+			</div>
+		</form>
+	</body>
+
+</html>

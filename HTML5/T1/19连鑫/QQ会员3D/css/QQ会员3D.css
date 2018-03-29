@@ -1,0 +1,222 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+.header-top{
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 100;
+}
+.header-logo,.header-nav,.header-nav li,.header-right{
+	display: inline-block;
+	height: 90px;
+	vertical-align: top;
+	line-height: 90px;
+}
+.header-logo{
+	position: relative;
+	right: 50px;
+}
+.header-nav li a{
+	margin-left: 25px;
+	color: white;
+	font-size: 18px;
+}
+.header-nav li a:hover{
+	color: red;
+}
+.header-right{
+	line-height: 40px;
+	margin-top:25px ;
+}
+.header-right a{
+	display: inline-block;
+	border-radius:100px ;
+	border: solid 1px red;
+	height: 40px;
+	position: relative;
+	left: 70px;
+	margin-right:20px ;
+	color: gold;
+}
+.header-right a:first-of-type{
+	width: 100px;
+}
+.header-right a:last-of-type{
+	width: 120px;
+}
+.header-right a:hover{
+	background: gold;
+	color: red;
+	border: 0px;
+}
+.man{
+	width: 60%;
+	 position: relative;
+	 top: 160px;
+	 left: 300px;
+	 z-index: 5;
+}
+.section-left{
+	color: white;
+	position: absolute;
+	left: 150px;
+	top: 300px;
+	line-height: 30px;
+}
+.section-left p{
+	color: gray;
+	margin-top: 5px;
+}
+.section-left a{
+	text-decoration: underline;
+}
+.tubiao a {
+	position:absolute;
+	z-index:5;
+	width:100px;
+	height:100px;
+	left:50%;
+	background:url(../img/sprites_function_feature.png) no-repeat;
+}
+.tubiao a.tubiao-1 {
+	background-position:0 0;
+	top:595px;
+	margin-left:100px;
+}
+.tubiao a.tubiao-2 {
+	background-position:0 -110px;
+	top:595px;
+	margin-left:330px;
+	transform:scale(1.3);
+}
+.tubiao a.tubiao-3 {
+	background-position:0 -220px;
+	top:500px;
+	margin-left:500px;
+}
+.tubiao a.tubiao-4 {
+	background-position:0 -330px;
+	z-index:1;
+	top:365px;
+	margin-left:420px;
+	transform:scale(0.8);
+}
+.tubiao a.tubiao-5 {
+	background-position:0 -440px;
+	z-index:1;
+	top:305px;
+	margin-left:250px;
+	transform:scale(0.6);
+}
+.tubiao a.tubiao-6 {
+	background-position:0 -550px;
+	z-index:1;
+	top:313px;
+	margin-left:90px;
+	transform:scale(0.4);
+}
+.tubiao a.tubiao-7 {
+	background-position:0 -880px;
+	top:545px;
+	margin-left:-90px;
+	transform:scale(0.7);
+}
+.tubiao a.tubiao-8 {
+	background-position:0 -770px;
+	top:450px;
+	margin-left:-170px;
+	transform:scale(0.6);
+}
+.tubiao a.tubiao-9 {
+	background-position:0 -660px;
+	top:350px;
+	margin-left:-70px;
+	transform:scale(0.5);
+}
+.footer{
+	width: 100%;
+	height: 320px;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	position: absolute;
+	top: 820px;
+	z-index: 100;
+}
+.footer-nav{
+	position: relative;
+	top: 50px;
+}
+.footer-nav li{
+	color: darkgray;
+	display: inline-block;
+	width: 100px;
+	height: 85px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.footer-nav ul li span:first-of-type{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: url(../img/sprites_footer.png);
+}
+.footer-nav ul li:nth-child(1) span:first-of-type{
+	background-position:0 0 ;
+} 
+.footer-nav ul li:nth-child(1) span:first-of-type:hover{
+	background-position:-100px 0 ;
+} 
+.footer-nav ul li:nth-child(2) span:first-of-type{
+	background-position:0 -100px ;
+} 
+.footer-nav ul li:nth-child(2) span:first-of-type:hover{
+	background-position:-100px -100px ;
+} 
+.footer-nav ul li:nth-child(3) span:first-of-type{
+	background-position:0px -200px ;
+} 
+.footer-nav ul li:nth-child(3) span:first-of-type:hover{
+	background-position:-100px -200px ;
+} 
+.footer-nav ul li:nth-child(4) span:first-of-type{
+	background-position:0 -300px ;
+} 
+.footer-nav ul li:nth-child(4) span:first-of-type:hover{
+	background-position:-100px -300px;
+} 
+.footer-nav ul li:nth-child(5) span:first-of-type{
+	background-position:0 -400px;
+} 
+.footer-nav ul li:nth-child(5) span:first-of-type:hover{
+	background-position:-100px -400px ;
+} 
+.footer-nav ul li:nth-child(6) span:first-of-type{
+	background-position:0 -500px ;
+} 
+.footer-nav ul li:nth-child(6) span:first-of-type:hover{
+	background-position:-100px -500px ;
+} 
+.footer-nav ul li:nth-child(7) span:first-of-type{
+	background-position:0 -600px ;
+} 
+.footer-nav ul li:nth-child(7) span:first-of-type:hover{
+	background-position:-100px -600px ;
+} 
+.divv{
+	position: relative;
+	top: 90px;
+	color: darkgray;
+}

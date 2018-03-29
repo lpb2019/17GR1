@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var s =1;
+			var x=11;
+			function lunbo(){
+				if(s>3 || x>18){
+					s=1;
+				}
+				if(x>18 || x<11){
+					x=11;
+				}
+			var img=document.getElementById("lunbo");		
+					img.src="img/"+s+".png"
+					s++;
+			var img1=document.getElementById("lunbo2");
+				img1.src="img/"+x+".jpg";
+				x++;		
+				}
+				setInterval(lunbo,1500);
+		</script>
+		<link rel="stylesheet" href="css/dajiang.css" type="text/css" />
+	</head>
+	<body onload="lunbo()">
+		<div>
+			<header class="header-top">
+				<div class="logo">
+					<a><img src="img/logo.PNG" /></a>
+				</div>
+				<nav class="top-nav">
+					<ul>
+						<li><a href="">消费级产品</a></li>
+						<li><a href="">专业级产品</a></li>
+						<li><a href="">行业应用</a></li>
+						<li><a href="">系统模块</a></li>
+						<li><a href="">探索精彩</a></li>
+						<li><a href="">服务与支持</a></li>
+					</ul>
+				</nav>
+				<div class="header-right">
+					<a href="">登录</a>
+					<a href="">注册</a>
+				</div>
+			</header>
+			<section >
+				<img src="img/1.png" id="lunbo" height="600px" style="position: relative;left: 50px;"/>
+			</section>
+			<div style="background: aliceblue;">
+				<table>
+					<tr>
+						<td rowspan="2">
+							<img src="img/11.jpg" width="700px" height="630px" id="lunbo2" style="margin-left:20px ;"/>
+						</td>
+						<td>
+							<img src="img/21.jpg" height="300px"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/22.jpg" height="300px" />
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/23.png" height="350px" style="margin-left:20px ;"/></td>
+						<td><img src="img/24.jpg" height="350px" width="553px"/></td>
+					</tr>
+				</table>
+				<div class="section-nav">
+					<ul>
+						<li><a href=""><h3>购买渠道</h3><p>查找可靠的购买渠道</p></a></li>
+						<li><a href=""><h3>服务与支持</h3><p>我们很高兴为您提供帮助</p></a></li>
+						<li><a href=""><h3>安全飞行</h3><p>了解最新安全及禁飞信息</p></a></li>
+					</ul>
+				</div>
+			</div>
+			<footer class="footer-bottom">
+				<div class="footer-nav">
+					<div class="fangkuai1">
+					<p>热门产品分类</p>
+					<ul>
+						<li><a href="#">消费级</a></li>
+						<li><a href="#">专业级</a></li>
+						<li><a href="#">行业级</a></li>
+						<li><a href="#">系统模块</a></li>
+					</ul>
+					</div>
+					<div class="fangkuai2">
+						<p>购买渠道</p>
+					<ul>
+						<li><a href="#">官方商城</a></li>
+						<li><a href="#">官方直营店</a></li>
+						<li><a href="#">线下零售店</a></li>
+						<li><a href="#">成为授权经销商</a></li>
+					</ul>
+					</div>
+					<div class="fangkuai3">
+						<p>帮助与支持</p>
+					<ul>
+						<li><a href="#">安全飞行指引</a></li>
+						<li><a href="#">产品支持</a></li>
+						<li><a href="#">维修中心</a></li>
+						<li><a href="#">购买指南</a></li>
+						<li><a href="#">售后服务政策</a></li>
+					</ul>
+					</div>
+					<div class="fangkuai4">
+						<p>探索精彩大疆</p>
+					<ul>
+						<li><a href="#">新闻中心</a></li>
+						<li><a href="#">精彩视频</a></li>
+						<li><a href="#">精彩活动</a></li>
+						<li><a href="#">大疆公益</a></li>
+					</ul>
+					</div>
+					<div class="fangkuai5">
+						<p>社区</p>
+					<ul>
+						<li><a href="#">天空之城</a></li>
+						<li><a href="#">大疆社区</a></li>
+						<li><a href="#">开发者</a></li>
+					</ul>
+					</div>
+					<div class="fangkuai6">
+						<p class="p1">订阅我们</p>
+						<p class="p1">第一时间获得大疆的最新动态</p>
+						<input type="email" placeholder="请输入您的邮箱地址" required="required"/>
+						<form action="url" method="get"><input type="submit"  value="》" id="anniu"/></form>
+					</div>
+					<div class="footer-bottom1">
+						<ul>
+							<li><img src="img/footer daji.png" /></li>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">招聘精英</a></li>
+							<li><a href="#">市场合作</a></li>
+							<li><a href="#">关于我RoboMaster</a></li>
+							<li><a href="#">大疆传媒</a></li>
+							<li><a href="#">慧飞培训中心</a></li>
+						</ul>
+						<hr size="3" color="#A9A9A9" style="position: relative;top: 20px;"/>
+					</div>
+					<div class="footer-bottom2">
+						<p>
+							Copyright © 2018 DJI 大疆创新  版权所有&nbsp;&nbsp;
+							<a href="#">隐私权政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">使用条款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">疆湖名录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">网站地图</a>&nbsp;&nbsp;&nbsp;&nbsp;
+							网站问题反馈？<a href="#">点击这里</a>
+						</p>
+						<p>
+							<a href="#">粤ICP备12022215号-11</a>
+							本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
