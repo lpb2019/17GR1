@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="zhongbai.css"/>
+	<body onload="shijian()">
+		<h2 id="sj"></h2>
+		<div class="div1">
+			<div class="div2">
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function shijian (){
+			setInterval("sj.innerHTML=new Date().toLocaleString()")
+		}
+	</script>
+</html>

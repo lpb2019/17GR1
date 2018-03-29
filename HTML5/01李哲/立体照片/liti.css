@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #D3D3D3;
+}
+.zhengti {
+	margin: 200px auto;
+	-webkit-perspective: 1000px;
+}
+#a{
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateX(-30deg);
+}
+.tu div {
+	position: absolute;
+	height: 235px;
+	width: 235px;
+	left: 300px;
+	opacity: 0.75;
+	border-radius: 15px;
+	-webkit-transition: all .3s linear;
+}
+.t1{
+	-webkit-transform: rotateY(0deg) translateZ(200px);
+}
+
+.t2 {
+	-webkit-transform: rotateY(60deg) translateZ(200px);
+}
+
+.t3 {
+	-webkit-transform: rotateY(120deg) translateZ(200px);
+}
+
+.t4 {
+	-webkit-transform: rotateY(180deg) translateZ(200px);
+}
+
+.t5 {
+	-webkit-transform: rotateY(240deg) translateZ(200px);
+}
+
+.t6{
+	-webkit-transform: rotateY(300deg) translateZ(200px);
+}
+.tu div img {
+	height: 235px;
+	width: 235px;
+	border-radius: 15px;
+	-webkit-transition: all .3s linear;
+}
+.tu div:hover {
+	opacity: 1;
+}
+
+.tu div:hover img {
+	height: 335px;
+	width: 335px;
+	margin-left: -50px;
+	margin-top: -50px;
+}
