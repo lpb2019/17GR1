@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.header-top{
+	background: rgba(0,0,0,0.1);
+	width: 100%;
+	margin: 0 auto;
+}
+.logo,.top-nav,.top-nav li,.header-right{
+	display: inline-block;
+	line-height: 70px;
+	vertical-align: middle;
+}
+.logo{
+	margin-left: 13%;
+}
+.top-nav{
+	margin-left: 3%;
+	margin-top:-20px ;
+}
+.top-nav li{
+	margin: 20px;
+}
+.top-nav li a{
+	color: dimgray;
+}
+
+.top-nav li a:hover{
+	color: red;
+}
+.header-right{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+.header-right a{
+	color: dimgray;
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+	border: 1px solid wheat;
+	border-radius: 20px;
+	padding-left: 30px;
+}
+.header-right a:hover{
+	color: white;
+	background: wheat;
+	border: 0px;
+}
+/*.div1{
+	vertical-align: middle;
+}*/
+td{
+	padding: 10px;
+}
+.section-nav li{
+/*	position: relative;*/
+	margin-left: 100px;
+    display: inline-block;
+    padding: 55px 40px;
+    border-left: 1px solid #f2f2f2;
+    color: #303233;
+    cursor: pointer;
+   /* transition: all .4s;*/
+}
+.section-nav{
+	background: white;
+	margin: 20px auto;
+}
+.section-nav li a{
+	color: black;
+}
+.footer-bottom{
+	width: 100%;
+	height: 462px;
+	background: #000000;
+	opacity: 0.86;
+}
+.footer-nav{
+	color: white;
+	margin: 0 auto;
+	
+}
+.fangkuai1,.fangkuai2,.fangkuai3,.fangkuai4,.fangkuai5,.fangkuai6{
+	width: 190px;
+	height: 197px;
+	display: inline-block;
+	line-height: 35px;
+	vertical-align:top;	
+	margin: 50px 15px;
+	font-size: 12px;
+}
+.fangkuai1 li a,.fangkuai2 li a,.fangkuai3 li a,.fangkuai4 li a,.fangkuai5 li a,.fangkuai6 li a{
+color: dimgray;
+}
+.fangkuai1 li a:hover,
+.fangkuai2 li a:hover,
+.fangkuai3 li a:hover,
+.fangkuai4 li a:hover,
+.fangkuai5 li a:hover,
+.fangkuai6 li a:hover{
+color: white;
+}
+.fangkuai6{
+	text-align: right;
+	position: relative;
+	right: 30px;
+}
+#anniu{
+	position: relative;
+	bottom: 34px;
+}
+.footer-bottom1{
+	font-size: 12px;
+	position: relative;
+	top: 10px;
+}
+.footer-bottom1 li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.footer-bottom1 li a{
+	color: white;
+}
+.footer-bottom1 li a:hover{
+	color: dimgray;
+}
+.footer-bottom2 p,.footer-bottom2 p a{
+	font-size: 12px;
+	color: dimgray;
+}
+.footer-bottom2 p{
+	line-height: 25px;
+	position: relative;
+	left: 30px;
+	top: 50px;
+	
+}
