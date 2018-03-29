@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+}
+
+.warp {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.top1 {
+	height: 35px;
+	background-color: #F2F2F2;
+}
+
+.temp {
+	line-height: 35px;
+}
+
+.top1 .temp a {
+	margin-left: 30px;
+}
+
+.r {
+	float: right;
+}
+
+.l {
+	float: left;
+}
+
+.top2 {
+	height: 100px;
+	background-color: #F2F2F2;
+}
+
+.top2-l,
+.top2-r {
+	margin-top: 20px;
+}
+
+.top3 {
+	background-color: #F2F2F2;
+}
+
+.ww {
+	width: 1200px;
+	height: 400px;
+	border: solid 1px brown;
+}
+
+.ww1,
+.ww2,
+.ww3 {
+	border-bottom: burlywood solid 1px;
+}
+
+.ww1,
+.ww2 {
+	width: 1200px;
+	height: 50px;
+}
+
+.ww3 {
+	width: 1200px;
+	height: 100px;
+}
+
+.ww1 .ww1-l span {
+	margin-left: 100px;
+}
+
+.ww1-r li {
+	display: inline-block;
+	margin-left: 60px;
+}
+
+.ww2-l span {
+	margin-left: 100px;
+}
+
+.ww2-r li {
+	display: inline-block;
+	/*margin-left: 60px;*/
+}
+
+.ww2-r li:nth-of-type(1) {
+	margin-right: 60px;
+}
+
+.ww2-r li:nth-of-type(3) {
+	border: solid black 1px;
+}
+
+.ww3-l span {
+	margin-left: 20px;
+}
+
+.ww3-r li {
+	display: inline-block;
+	margin-left: 60px;
+}
+
+.ww3-r #fang span {
+	border: solid 1px black;
+}
+
+.di {
+	height: 200px;
+	background-color: #F2F2F2;
+}
+
+.di1 {
+	position: relative;
+	top: 50px;
+	left: 200px;
+}
+
+.di2 {
+	margin-top: 100px;
+	margin-left: 550px;
+}
