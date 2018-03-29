@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.zhengti {
+	text-align: center;
+	margin-top: 50px;
+}
+.yi{
+	background: #00C18C;
+	border: solid 10px forestgreen;
+}
+.er{
+	background: #FF95B7;
+	border: solid 10px #FFC0CB;
+}
+.san{
+	background: #33A4D9;
+	border: solid 10px #00F0F0;
+}
+.si{
+	background: #F0A000;
+	border: solid 10px #FFE199;
+}
+.wu{
+	background: #E8ACD8;
+	border: solid 10px #DD70C3;
+}
+.yi:hover{
+	background: #35CC00;
+	border: solid 10px #00C18C;
+}
+.er:hover{
+	background: #FFC0CB;
+	border: solid 10px #FF95B7;
+}
+.san:hover{
+	background: #00F0F0;
+	border: solid 10px #33A4D9;
+}
+.si:hover{
+	background: #FFE199;
+	border: solid 10px #F0A000;
+}
+.wu:hover{
+	background: #DD70C3;
+	border: solid 10px #E8ACD8;
+}
+.zhengti li {
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	margin-left: -50px;
+	padding: 50px 50px;
+	border-radius: 50%;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.zhengti li a {
+	margin-left: 15px;
+	line-height: 40px;
+	font-size: 40px;
+}
+.zhengti li:hover {
+	z-index: 11;
+	-webkit-transform: scale(1.1);
+	-webkit-transition: all 0.5s linear;
+}
+.zhengti li span {
+	color: #7E7E7E;
+}
+@font-face {
+	font-family:'LigatureSymbols';
+	src: url(LigatureSymbols.svg)
+	src: url(LigatureSymbols.eot);
+	src: url(LigatureSymbols.ttf);
+	src: url(LigatureSymbols.woff);
+}
+.zhengti li span:before{
+	font-family: 'LigatureSymbols';
+	display: block;
+	font-size: 80px;
+}
+.zhengti li:nth-of-type(1) span:before{
+	content: 'home';
+}
+.zhengti li:nth-of-type(2) span:before{
+	content: 'phone';
+}
+.zhengti li:nth-of-type(3) span:before{
+	content: 'wifi';
+}
+.zhengti li:nth-of-type(4) span:before{
+	content: 'setting';
+}
+.zhengti li:nth-of-type(5) span:before{
+	content: 'twitter';
+}

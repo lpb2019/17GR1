@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url(body.png) repeat-x;
+}
+.zhengti{
+	width: 956px;
+	margin: 0 auto;
+}
+.top{
+	background: url(bg_chs.png) repeat-x center top;
+	height: 109px;
+}
+.zhong{
+	height: 600px;
+	background: #DDF5F7;
+	border: 1px #9CDEF2 solid;
+}
+.neirong{
+	width: 700px;
+	margin: 0 auto;
+	padding: 1px;
+}
+h1{
+	height: 25px;
+	line-height: 25px;
+	border-left: 3px #59AFE4 solid;
+	padding-left: 10px;
+	font-size: 20px;
+	margin-top: 80px;
+	color: black;
+}
+form{
+	border-top: 1px #d7d7d7 solid;
+	margin-top: 10px;
+}
+.mingcheng{
+	height: 36px;
+	line-height: 36px;
+	margin-top: 18px;
+}
+.mingcheng h3{
+	float: left;
+	width: 100px;
+	padding-right: 8px;
+	text-align: right;
+	font-size: 14px;
+}
+.mingcheng input {
+	float: left;
+	width: 280px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	padding: 8px;
+}
+.mingcheng span {
+	float: left;
+	padding-left: 10px;
+	font-size: 15px;
+	color: #89867E;
+}
+button{
+	width: 180px;
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	margin-top: 50px;
+	margin-left: 110px;
+	background: red;
+}
+input:focus {
+	border: 4px blue solid;
+}
+
+input:invalid {
+	border: 1px red solid;
+}
+
+input:valid {
+	border: 1px green solid;
+}
+
+
+
+
+
+
+
+
+
+

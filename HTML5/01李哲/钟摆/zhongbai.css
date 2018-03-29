@@ -1,0 +1,45 @@
+body{
+	background: lightcyan;
+}
+h2{
+	text-align: center;
+	color: plum;
+	margin: 100px auto;
+}
+.div1{
+	border-radius: 50%;
+	margin: 0 auto;
+	background: whitesmoke;
+	width: 400px;
+	height: 400px;
+	padding: 50px;
+}
+.div2{
+	height: 200px;
+	width: 10px;
+	background: thistle;
+	margin: 0px auto;
+	-webkit-animation: zhongbai 1s linear 0s infinite alternate;
+}
+.div2::after{
+	display: block;
+	position: relative;
+	content: "";
+	height: 50px;
+	width: 50px;
+	background: thistle;
+	border-radius: 50%;
+	left: -20px;
+	top: 200px;
+}
+@-webkit-keyframes zhongbai{
+	0%{
+		-webkit-transform-origin: top center;
+		-webkit-transform: rotate(30deg);
+	}
+	100%{
+		-webkit-transform-origin: top center;
+		
+		-webkit-transform: rotate(-30deg);
+	}
+}
