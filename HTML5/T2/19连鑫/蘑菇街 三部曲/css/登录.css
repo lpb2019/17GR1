@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.r{
+	float: right;
+}
+.l{
+	float: left;
+}
+.header{
+	margin: 30px auto;
+}
+.header-right{
+	width: 900px;
+	height: 30px;
+	background: bisque;
+	text-align: center;
+	line-height: 30px;
+	border: blue solid 1px;
+	margin-top: 10px;
+	margin-right: 100px;
+}
+.section{
+	margin: 30px auto;
+	display: inline-block;
+	width: 1349px;
+	height: 600px;
+}
+.section-right{
+	background:lightpink;
+	display: block;
+	width: 450px;
+	height: 400px;
+	position: absolute;
+	right: 150px;
+	top: 200px;
+	opacity: 0.9;
+}
+.tab-pane{
+	margin: 0 auto;
+	text-align: center;
+}
+.tab-pane input{
+	/*display: block;*/
+	width: 300px;
+	height: 45px;
+	margin: 20px auto;
+	border: 0;
+	background: bisque;
+}
+#dongtai{
+	width: 100px;
+	background: lightsalmon;
+}
+#mima2{
+	width: 195px;
+}
+.nav-tabs li{
+	display: inline-block;
+	width: 225px;
+	text-align: center;
+}
+#denglu{
+	background: lightsalmon;
+}
+.footer-nav{
+	width: 1300px;
+	margin: auto;
+	border-bottom: 2px red solid;
+}
+.footer-kuai{
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+}
+.footer-kuai li{
+	/*text-align: center;*/
+	display: inline-block;
+	/*width: 80px;
+	height: 20px;*/
+	padding-left: 60px;
+	float: left;
+	font-size: 10px;
+}
+.ss li a{
+	color: gray;
+	text-decoration: none;
+}
+.ss li a:hover{
+	color: pink;
+}
+.footer-1 li{
+	display: inline-block;
+}
+.footer-footer{
+	width: 1300px;
+	margin:10px auto;
+}
+.footer-1 li{
+	margin-right: 20px;
+}
+#huibai{
+	font-size: 10px;
+	color: darkgrey;
+}
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/购物车.css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<div class="content">
+			<!--第一行-->
+			<div class="header">
+				<div class="header-top">
+					<div class="header-left l">
+						<a href="#" style="color: gray;text-decoration: none;"><img src="img/home.jpg" />蘑菇街首页</a>
+					</div>
+					<ul class="r">
+						<li>
+							<a href="#">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="登录.html" target="_self">登录</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/order.jpg" alt="我的订单" />我的订单</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/car.jpg" alt="购物车" />购物车</a>
+						</li>
+						<li>
+							<select>
+								<option value="">客户服务</option>
+							</select>
+						</li>
+						<li>
+							<a href="#"><img src="img/my.jpg" />我的小店</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--身体-->
+			<section class="section">
+				<div class="section-header">
+					<div class="section-top">
+						<div class=" l">
+							<a href="#"><img src="img/logo (1).png" /></a>
+						</div>
+						<div class="section-right r">
+							<a href="#"><img src="img/购物车→logo.png" /></a>
+						</div>
+					</div>
+				</div>
+				<!--<div style="background:#F2F2F2 ;">-->
+					<div class="section-nav">
+						<ul id="myTab" class="nav nav-tabs">
+							<li class="active">
+								<a href="#home" data-toggle="tab">全部商品(3)</a>
+							</li>
+							<li>
+								<a href="#ios" data-toggle="tab">优惠(3)</a>
+							</li>
+							<li>
+								<a href="#node" data-toggle="tab">库存紧张(3)</a>
+							</li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade in active" id="home">
+								<form action="url" method="post">
+									<div class="one xiahuaxian" style="height: 35px;">
+									<div class="gouwu1 l">
+										<input type="checkbox" value="全选"/>全选
+										<span></span>
+										<span>商品</span>
+										</div>
+										<div class="gouwu2 r">
+											<ul>
+												<li>商品信息</li>
+												<li>单价(元)</li>
+												<li>数量</li>
+												<li>小计</li>
+												<li>操作</li>
+											</ul>
+										</div>
+									</div>
+									<div class="two xiahuaxian" style="height: 50px;">
+										<div class="gouwu1 l">
+										<input type="checkbox" value="全选"/>店铺
+										<span>麻豆潮品<img src="img/connect.jpg" /></span>
+										<span></span>
+										</div>
+										<div class="gouwu3 r">
+											<ul>
+												<li>满60减5&nbsp;&nbsp;&nbsp;满两件减60</li>
+												<li>优惠券：<input type="button" value="删除" /></li>
+											</ul>
+										</div>
+									</div>
+									<div class="three xiahuaxian" style="height: 90px;">
+										<div class="gouwu5 l">
+											<input type="checkbox" value="全选" />全选&nbsp;&nbsp;&nbsp;&nbsp;
+											<span><img src="img/shoes.jpg" width="70px" height="70px"/><font size="1" color="gray" >超人气百搭韩国箭头靴</font> </span>
+										</div>
+										<div class="gouwu2 r" >
+											<ul>
+												<li>颜色：黑色<br />尺码35</li>
+												<li>
+													<a style="text-decoration: line-through;font-size: 10px;color: gray;">123.00</a><br />
+													<font size="1" >69.44</font><br />
+													<font size="4" color="red" >促销5.6折</font>
+												</li>
+												<li><input type="number" value="0" max="9" min="0" height="20px"/> </li>
+												<li><font size="4" color="red" >69.44</font> </li>
+												<li>删除</li>
+											</ul>
+										</div>
+									</div>
+									<div class="four xiahuaxian" style="height: 50px;">
+										<div class="gouwu1 l">
+										<input type="checkbox" value="全选"/>店铺
+										<span>麻豆潮品<img src="img/connect.jpg" /></span>
+										<span></span>
+										</div>
+										<div class="gouwu3 r">
+											<ul>
+												<li>满60减5&nbsp;&nbsp;&nbsp;满两件减60</li>
+												<li>优惠券：<input type="button" value="删除" /></li>
+											</ul>
+										</div>
+									</div>
+									<div class="five xiahuaxian" style="height: 90px;">
+										<div class="gouwu5 l">
+											<input type="checkbox" value="全选" />全选&nbsp;&nbsp;&nbsp;&nbsp;
+											<span><img src="img/shoes.jpg" width="70px" height="70px"/><font size="1" color="gray" >超人气百搭韩国箭头靴</font> </span>
+										</div>
+										<div class="gouwu2 r" >
+											<ul>
+												<li>颜色：黑色<br />尺码35</li>
+												<li>
+													<a style="text-decoration: line-through;font-size: 10px;color: gray;">123.00</a><br />
+													<font size="1" >69.44</font><br />
+													<font size="4" color="red" >促销5.6折</font>
+												</li>
+												<li><input type="number" value="0" max="9" min="0" height="20px"/> </li>
+												<li><font size="4" color="red" >69.44</font> </li>
+												<li>删除</li>
+											</ul>
+										</div>
+									</div>
+									<div class="six xiahuaxian" style="height: 80px;">
+										<div class="gouwu1 l">
+										<input type="checkbox" value="全选"/>店铺
+										<span>删除&nbsp;&nbsp;清除失效产品</span>
+										<span></span>
+										</div>
+										<div class="gouwu6 r" style="line-height: 50px;">
+											<ul>
+												<li>有0件商品，总计</li>
+												<li><font color="red">￥&nbsp;&nbsp;0.00</font></li>
+												<li><input type="submit" value="去付款》" /> </li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="ios">
+								<form action="url" method="post">
+									
+								</form>
+							</div>
+							<div class="tab-pane fade" id="node">
+								<form action="url" method="post">
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				<!--</div>-->
+			</section>
+			<!--脚部-->
+			<footer class="footer" style="width: 1349px;height: 298px;background: #F2F2F2;">
+				<nav class="footer-nav">
+					<div class="footer-kuai ss">
+						<h4>-新手帮助-</h4>
+						<ul>
+							<li>
+								<a href="#">常见问题</a>
+							</li>
+							<li>
+								<a href="#">自助服务</a>
+							</li>
+							<li>
+								<a href="#">联系客服</a>
+							</li>
+							<li>
+								<a href="#">意见反馈</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-kuai ss">
+						<h4>-权益保障-</h4>
+						<ul>
+							<li>
+								<a href="#">全国包邮</a>
+							</li>
+							<li>
+								<a href="#">七天无理由退货</a>
+							</li>
+							<li>
+								<a href="#">退货运费补贴</a>
+							</li>
+							<li>
+								<a href="#">限时发货</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-kuai ss">
+						<h4>-支付方式-</h4>
+						<ul>
+							<li>
+								<a href="#">微信支付</a>
+							</li>
+							<li>
+								<a href="#">支付宝</a>
+							</li>
+							<li>
+								<a href="#">白付美支付</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-kuai ss">
+						<h4>-移动客户端下载-</h4>
+						<ul>
+							<li>
+								<a href="#">蘑菇街</a>
+							</li>
+							<li>
+								<a href="#">美丽说</a>
+							</li>
+							<li>
+								<a href="#">uni引力</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="footer-footer">
+					<div class="footer-1 ss">
+						<ul>
+							<li>
+								<a href="#">关于我们</a>
+							</li>
+							<li>
+								<a href="#">招聘信息</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+							<li>
+								<a href="#">商家入驻</a>
+							</li>
+							<li>
+								<a href="#">商家后台</a>
+							</li>
+							<li>
+								<a href="#">蘑菇商学院</a>
+							</li>
+							<li>
+								<a href="#">商家社区</a>
+							</li>
+							<li>
+								<a href="#">规则中心</a>
+							</li>
+							<li>
+								<a href="#">有害信息举报</a>
+							</li>
+							<span id="huibai">©2017 Mogujie.com 杭州卷瓜网络有限公司</span>
+						</ul>
+					</div>
+					<div id="huibai" class="footer-2">
+						<p>营业执照：913301065526808764 | 网络文化经营许可证：浙网文（2016）0349-219号 | 增值电信业务经营许可证：浙B2-20110349 | 安全责任书 | 浙公网安备 33010602002329号 |</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+	</body>
+
+</html>
