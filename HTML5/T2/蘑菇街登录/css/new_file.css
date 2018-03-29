@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+}
+.wear{
+	width: 1200px;
+	margin: 0 auto;
+}
+a{
+	text-decoration:none;
+	color: black;
+}
+ul,ol{
+	list-style: none;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+/*.............*/
+
+/*第一行*/
+.top1{
+	height: 91px;
+	padding: 20px;
+}
+.top1-l{
+	margin-left: 50px;
+}
+.top1-s a{
+	background-color: #FF756D;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	font-size: 11px;
+	margin-left: 20px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #000000;
+	border: solid aquamarine 1px;
+}
+/*第二行*/
+.top2{
+	background-image:url(../img/1.png);
+	height: 600px;
+}
+
+/*选项卡*/
+.top-xuan{
+	position: absolute;
+	top: 200px;
+	right: 100px;
+	background-color: #FAAFC6;
+	width: 400px;
+	height: 348px;
+	opacity: 0.8;
+}
+.top-xuan ul li{
+	width: 150px;
+	text-align: center;
+}
+.top-xuan ul li a{
+	color: #000000;
+	text-decoration: none;
+}
+.top-xuan ul li a:hover{
+	border-bottom: solid red 2px;
+}
+.tab-content input{
+	margin: 10px 40px;
+	width: 300px;
+	height: 35px;
+}
+.tab-content input:nth-of-type(3){
+	background-color: red;
+}
+.tab-pane span input:nth-of-type(1){
+	background-color: red;
+	width: 100px;
+	height: 35px;
+}
+.tab-pane span input:nth-of-type(2){
+	margin-left: -40px;
+	width: 195px;
+	height: 35px;
+}
+.s1{
+	background-color: red;
+}
+
+.top2-1{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.top2-1 a{
+	color: #000000;
+	text-decoration: none;
+}
+.top2-2{
+	color:black;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+/*第三行*/
+.top3{
+	width: 1349px;
+	height: 298px;
+	padding-bottom: 60px;
+}
+	
+/*第三行上边*/
+.top3-top{
+	border-top: solid red 1px;
+}
+.top3-1{
+	padding-top: 20px;
+	float: left;
+	width: 300px;
+	height: 80px;
+}
+	
+.h41{
+	font-size: 15px;
+	font-weight: 800;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.li1{
+	float: left;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+}
+.li3{
+	float: left;
+    display: block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+}
+.sst li a{
+	color: #000000;
+	text-decoration: none;
+}
+
+/*第三行下边*/
+.top3-down{
+	border-top: solid red 2px;
+	margin-top: 120px;
+	width: 100%;
+	padding-top:20px ;
+}
+.top3-down ul li{
+	display: inline-block;
+}
+.down1 ul li a{
+	margin-left: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+.down2 ul li a{
+	margin-left: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+.top3-down a:hover{
+	color: red;
+}
