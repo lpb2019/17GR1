@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.div1{
+	height: 600px;
+	width: 600px;
+	background: blanchedalmond;
+	border: solid 2px black;
+	perspective: 1000px;
+    margin: 100px auto;
+
+}
+.div2 {
+	margin: 100px 200px;
+	text-align: center;
+	transform-style:preserve-3d ;
+	-webkit-transform-style:preserve-3d ;
+}
+.div1 img{
+	display:block;
+
+	-webkit-transform: rotateX(30deg) rotateY(30deg) rotateZ(-70deg);
+    box-shadow: -10px 10px 10px black;
+}
+img:hover{
+	box-shadow: 10px 20px 15px black;
+	-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.5);
+	transition: all 0.5s linear; 
+	}

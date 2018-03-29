@@ -1,0 +1,197 @@
+	* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	background: #EEF3FA;
+}
+
+
+a {
+	text-decoration: none;
+	color: cadetblue;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.r {
+	float: right;
+}
+
+.r1 {
+	margin-right: 120px;
+}
+
+.l {
+	float: left;
+}
+
+.shang {
+	width: 1200px;
+	text-align: center;
+	margin: 0px auto;
+	background: #F2F2F2;
+	height: 30px;
+}
+
+.zuo {
+	margin-top: 10px;
+}
+
+.shang1 a {
+	text-decoration: none;
+	text-align: center;
+	margin-left: 10px;
+	font: #C4C4C6 12px;
+	background: #F2F2F2;
+}
+.aa {
+	color: red;
+}
+
+.ac a {
+	font: 12px #C4C4C6;
+	margin-left: 8px;
+}
+
+.s {
+	border-left: #C4C4C6 1px solid;
+}
+
+.s img {
+	margin-left: 12px;
+}
+
+.ss {
+	padding-left: 12px;
+	border-left: #C4C4C6 1px solid;
+}
+
+.z {
+	padding-right: 0px;
+	background-color: #FFFFFF;
+}
+
+.you11 {
+	text-align: center;
+}
+
+.you11 input:nth-last-of-type(1) {
+	border: solid black 2px;
+	width: 150px;
+	height: 30px;
+	line-height: 35px;
+	border-left: 30px;
+}
+
+.you11 input:nth-last-of-type(2) {
+	border: solid black 2px;
+	width: 70px;
+	height: 30px;
+	line-height: 35px;
+	border-right: 0px;
+	text-align: center;
+}
+
+.you11 input {
+	margin-left: -5px;
+	border-top: 1px;
+	}
+	.zhong {
+		margin-top: 10px;
+		width: 100%;
+		height: 20px;
+		line-height: 20px;
+		border-bottom: solid 2px red;
+	}
+	.zhong-x a{
+		display: inline-block;
+		width: 100px;
+		height: 20px;
+	}
+.zhong-x a:nth-of-type(1){
+	background-color: deeppink;
+	width: 200px;
+	height: 20px;
+	text-align: center;
+}
+.zhong-x a:nth-of-type(3){
+    padding-left: 25px;
+    
+}
+.zhong-x a:nth-of-type(3){
+    border-left: 2px solid black;
+    padding-left: 25px;
+    
+}
+.zhong-x a:nth-of-type(4){
+    border-left: 2px solid black;
+    padding-left: 25px;
+}
+.w {
+	background-color: pink;
+
+}
+.www li a{
+	font-size: 12px;
+    font: #827D9F "微软雅黑";
+    margin-left: 15px;
+    left: 10px;
+}
+.www li{
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-bottom:solid 1px #FFC0CB  ;
+}
+.www {
+	position: relative;
+	height: 450px;
+	width: 200px;
+	background-color:#FEEFF3;
+	padding-top: 10px;
+}
+.carousel-inner{
+	carousel slide;
+}
+.xxxx{
+	position: absolute;
+	width: 400px;
+	height: 500px;
+	background: white;
+	margin-right: 300px;
+	margin-left: 190px;
+	margin-top: -30px;
+	opacity: 0.8;
+	z-index: 100;
+}	
+.www,	.x{
+	display: inline-block;
+}	
+.xxxxx img{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+
+.11{
+		background: url(../img/images/5.jpg) no-repeat;
+		height: 399px;
+		width: 157px;
+		display: block;
+		position: relative;
+		top: 5%;
+		animation: qiqiu 5s ease infinite alternate;
+			}
+@-webkit-keyframes tiankong {
+		50% {
+					background: url(../img/images/1.PNG);
+		}
+		100% {
+					background: url(../img/images/2.PNG);
+	}
+}

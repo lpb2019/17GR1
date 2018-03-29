@@ -1,0 +1,189 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				height: 700px;
+				width: 100%;
+				background: bisque;
+				animation: tiankong 12s ease infinite alternate;
+			}
+			
+			@-webkit-keyframes tiankong {
+				25% {
+					background: orange;
+				}
+				50% {
+					background: #FFA500;
+				}
+				75% {
+					background: aqua;
+				}
+				100% {
+					background: darkblue;
+				}
+			}
+			
+			.div1 a {
+				background: url(img/balloon.png) no-repeat;
+				height: 399px;
+				width: 157px;
+				display: block;
+				position: relative;
+				top: 5%;
+				animation: qiqiu 12s ease infinite alternate;
+			}
+			@-webkit-keyframes yun{
+				20%{
+					-webkit-transform: translate(20%);
+				}
+				40%{
+					-webkit-transform: translate(40%);
+				}
+				60%{
+					-webkit-transform: translate(60%);
+				}
+				80%{
+					-webkit-transform: translate(80%);
+				}
+				100%{
+					-webkit-transform: translate(100%);
+				}
+			}
+			@-webkit-keyframes qiqiu {
+				0% {
+					left: -200px;
+					-webkit-transform: rotate(60deg);
+				}
+				25% {
+					left: 25%;
+					-webkit-transform: rotate(30deg);
+				}
+				50% {
+					left: 50%;
+					-webkit-transform: rotate(60deg);
+				}
+				100% {
+					left: 100%;
+					-webkit-transform: rotate(30deg);
+				}
+			}
+			
+			.fount {
+				height: 300px;
+				width: 100%;
+				background: url(img/groundFront.png)repeat-x center;
+				top: 0px;
+				position: relative;
+				z-index: 100;
+			}
+			
+			.mind {
+				height: 300px;
+				width: 100%;
+				background: url(img/groundMid.png)repeat-x;
+				top: -300px;
+				position: relative;
+				z-index: 90;
+			}
+			
+			.back {
+				height: 300px;
+				width: 100%;
+				background: url(img/groundBack.png)repeat-x;
+				top: -600px;
+				position: relative;
+				z-index: 80;
+			}
+			
+			.wan {
+				height: 300px;
+				width: 450px;
+				background: url(img/dowEventCenter.png);
+			}
+			
+			.fang {
+				height: 350px;
+				width: 450px;
+				background: url(img/Planetarium.png) center no-repeat;
+				top: -450px;
+				position: relative;
+				z-index: 90;
+				left: 1000px;
+			}
+			
+			.ta {
+				height: 350px;
+				width: 450px;
+				background: url(img/Glockenspiel.png) center no-repeat;
+				top: -850px;
+				position: relative;
+				z-index: 90;
+				left: 550px;
+			}
+			
+			.o {
+				height: 350px;
+				width: 300px;
+				background: url(img/friendshipShell.png) no-repeat;
+				top: -200px;
+				position: relative;
+				z-index: 90;
+				left: 200px;
+			}
+			.tuzi{
+				height: 350px;
+				width: 300px;
+				background: url(img/beans.png) no-repeat;
+				top: -1000px;
+				position: relative;
+				z-index: 90;
+				left: 900px;
+				z-index: 50;
+			}
+			.yun{
+				height: 300px;
+				width: 250px;
+				background: url(img/cloudMedium.png) no-repeat;
+				left: 50px;
+				top: 50px;
+				position: absolute;
+				animation: yun 12s ease infinite alternate;
+			}
+			.yun1{
+				height: 300px;
+				width: 250px;
+				background: url(img/cloudMedium.png) no-repeat;
+				left: 850px;
+				top: 80px;
+				position: absolute;
+				animation: yun 12s ease infinite alternate;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1">
+			<a href="#">
+
+			</a>
+			<div class="yun"></div>
+			<div class="yun1"></div>
+			<div class="ground fount">
+
+			</div>
+			<div class="ground mind">
+				<div class="o"></div>
+			</div>
+			<div class="ground back">
+				<div class="wan"></div>
+				<div class="fang"></div>
+				<div class="ta"></div>
+			</div>
+			<div class="tuzi"></div>
+		</div>
+	</body>
+
+</html>
