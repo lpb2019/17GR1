@@ -1,0 +1,92 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html body{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.zhengti{
+	background: #888888;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background: rgba(255,255,255,0.5);
+	left: 0;
+	top: 0;
+	position: fixed;
+	border: solid 1px #000000 ;
+}
+.header:hover{
+
+	background: #FFFFFF;
+}
+.header-div{
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo{
+	margin-top:20px;
+	height: 50px;
+}
+.zhongjian,.zhongjian li,.you{
+	height: 100px;
+}
+.logo, .zhongjian,.zhongjian li,.you{
+	display: inline-block;
+	vertical-align: top;
+}
+.zhongjian{
+	margin:0 120px;
+}
+.zhongjian li{
+	line-height:90px;
+	width:90px;
+}
+.zhongjian li a{
+	display:block;
+	text-align:center;
+	font-size:16px;
+	color:#FFFFFF;
+}
+.zhongjian li a:hover{
+	color: #000000;
+}
+.you a {
+	display:inline-block;
+	font-size:16px;
+	text-align:center;
+	margin-top:25px;
+	border-radius:35px;
+}
+.you a:first-of-type {
+	width:93px;
+	/*height:38px;*/
+	line-height:38px;
+	color:#fad65c;
+	border:1px #fad65c solid;
+}
+.you a:first-of-type:hover {
+	color:#986b0d;
+	background:#fad65c;
+}
+.you a:last-of-type {
+	width:140px;
+	height:40px;
+	font-weight:700;
+	line-height:40px;
+	background:#fad65c;
+	color:#986b0d;
+}
+.you a:last-of-type:hover {
+	background:#fddc6c;
+}
+#im{
+	width:100% ;
+	height: 800px;
+}
