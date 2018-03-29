@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.wrap{
+				width: 100%;
+				height: 600px;
+				margin:  200px ;
+				perspective: 1000px;
+
+			}
+			.b{
+				-webkit-transform: rotateX(-30deg);
+				-webkit-transform-style: preserve-3d;
+				/*position: absolute;*/
+
+			}
+			.b div{
+				position: absolute;
+				height: 235px;
+		width: 235px;
+		left: 300px;
+		
+				opacity: 0.75;		
+				border-radius: 15px;
+				transition:all 3s linear;
+			}
+			.b div#a1{
+				-webkit-transform: rotateY(0deg) translatez(200px);
+			}
+			.b div#a2{
+				-webkit-transform: rotateY(60deg) translatez(200px);
+			}
+			.b div#a3{
+				-webkit-transform: rotateY(120deg) translatez(200px);
+			}
+			.b div#a4{
+				-webkit-transform: rotateY(180deg) translatez(200px);
+			}
+			.b div#a5{
+				-webkit-transform: rotateY(240deg) translatez(200px);
+			}
+			.b div#a6{
+				-webkit-transform: rotateY(300deg) translatez(200px);
+			}
+			.b div:hover img{
+				opacity: 1;
+				}
+			.b div:hover img{
+				-webkit-transform: scale(1.2);
+				/*margin-left:-50px;
+		margin-top:-50px;*/
+		/*margin-top: 300px;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="b">
+			<div id="a1">
+				<img src="img/1.jpg"/>
+			</div>
+			<div id="a2">
+				<img src="img/2.jpg"/>
+			</div>
+			<div id="a3">
+				<img src="img/3.jpg"/>
+			</div>
+			<div id="a4">
+				<img src="img/4.jpg"/>
+			</div>
+			<div id="a5">
+				<img src="img/5.jpg"/>
+			</div>
+			<div id="a6">
+				<img src="img/6.jpg"/>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

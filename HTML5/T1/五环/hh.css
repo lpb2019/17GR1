@@ -1,0 +1,89 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+span{
+	display: block;
+}
+
+.wrap {
+	text-align: center;
+	margin: 200px auto;
+}
+nav ul li{
+	width: 300px;
+	height: 300px;
+	border: 30px fuchsia solid;
+	border-radius: 50%;
+	background-color: aquamarine;
+	display: inline-block;
+	margin-left: -100px;
+	margin-top: 100px;
+	
+}
+span{
+	height: 60px;
+	width: 60px;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+@font-face {
+	font-family:'ll';
+ src: url('fonts/LigatureSymbols.eot');
+ src: url('fonts/LigatureSymbols.eot?#iefix') format('embedded-opentype'),
+   url('fonts/LigatureSymbols.woff') format('woff'),
+   url('fonts/LigatureSymbols.ttf') format('truetype'),
+   url('fonts/LigatureSymbols.svg#LigatureSymbols') format('svg');*/
+}
+
+nav ul li:nth-of-type(1) span:nth-of-type(1){
+	display: block;
+	font-family:'ll' ;
+	width: 60px;
+	height: 60px;
+	font-size: 60px;
+	
+}
+nav ul li:nth-of-type(2) span:nth-of-type(1){
+	display: block;
+	font-family:'ll' ;
+	width: 60px;
+	height: 60px;
+	font-size: 60px;
+	
+}
+nav ul li:nth-of-type(3) span:nth-of-type(1){
+	display: block;
+	font-family:'ll' ;
+	width: 60px;
+	height: 60px;
+	font-size: 60px;
+	
+}
+nav ul li:nth-of-type(4) span:nth-of-type(1){
+	display: block;
+	font-family:'ll' ;
+	width: 60px;
+	height: 60px;
+	font-size: 60px;
+	
+}
+nav ul li:nth-of-type(5) span:nth-of-type(1){
+	display: block;
+	font-family:'ll' ;
+	width: 60px;
+	height: 60px;
+	font-size: 60px;
+	
+}
+nav ul li:hover{
+	-webkit-transform: scale(1.2);
+	border: 30px fuchsia solid;
+	border-radius: 50%;
+	background-color: deepskyblue;
+	opacity: 1;
+	}

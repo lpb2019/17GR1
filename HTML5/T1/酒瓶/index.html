@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.div001{
+				height: 120px;
+				width: 120px;
+				border: 1px solid;
+				background-color: green;
+				margin: auto;
+				margin-top: 80px;
+				transition: all 2s linear;/*渐变属性 */
+			}
+			.div001:hover{
+				background-color: red;
+				width: 800px;
+				height: 800px;
+				transform: scaleX(0.6);
+			}
+			.002{
+				/*margin: auto;*/
+			}
+			.002:hover{
+					transform: skew(80deg);倾斜
+			}
+		</style>
+		<script type="text/javascript">
+			function bianda(a){
+				var a1=document.getElementById("abc");
+				a1.style.transform="scaleX("+a+")";
+			}
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<div class="div001" id="abc">	</div>
+			<div class="002" align="center">
+		<input type="range"min="0" max="2" step="0.2" onchange="bianda(this.value)" />
+		</div>
+	
+		
+		
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a1{
+				height: 500px;
+				width: 500px;
+				padding: 50px;
+				margin: 0 auto;
+				border-radius: 50%;
+				background-color: antiquewhite;
+			}
+			.a2{
+				height: 200px;
+				width: 5px;
+				-webkit-transform-origin:bottom ;
+				background-color: aqua;
+				-webkit-animation: name 1s linear 1s 2 normal;
+				margin: 0 auto;
+			}
+			.a2::after{
+				content:"" ;
+				width: 20px;
+				height: 20px;
+				background-color: #000000;
+				border-radius: 50%;
+				display: block;
+				left: -6px;
+				top: 180px;
+				position: relative;
+			}
+			@-webkit-keyframes name{
+				0%{
+					transform: rotate(0deg);
+					background-color: red;
+				}
+				50%{
+					transform: rotate(180deg);
+					background-color: chartreuse;
+				}
+				100%{
+					transform: rotate(360deg);
+					background-color: darkmagenta;
+				}
+			}
+		</style>
+	</head>
+	<body>
+	<div class="a1">
+		<div class="a2">
+			
+		</div>
+	</div>
+	</body>
+</html>
