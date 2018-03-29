@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:azure ;
+	width: 100%;
+	height: 100%;
+}
+.div1{
+	position:fixed;
+	background-color:bisque;
+	width: 100%;
+	height: 650px;
+	border: solid red 1px;
+	-webkit-animation: name 5s linear infinite normal;
+	
+}
+.div1 a{
+	display: block;
+	background: url(../img/balloon.png);
+	width: 157px;
+	height: 227px;
+	margin: 50px 0px;
+	left: -200px;
+	-webkit-animation: qiqiu 8s linear infinite alternate;
+	position: absolute;
+}
+@-webkit-keyframes qiqiu{
+	0%{left:-20%;}
+	25%{left:15%; 
+	-webkit-transform: rotate(30deg);}
+	50%{left:50%;-webkit-transform: rotate(60deg);}
+	75%{left:65%;}
+	100%{left:100%;}
+}
+.groun{
+	position: absolute;
+}
+.front{
+	background: url(../img/groundFront.png) repeat-x center;
+	width: 100%;
+	height: 300px;
+	bottom: 0px;
+	z-index: 20;
+}
+.mid{
+	background: url(../img/groundMid.png) repeat-x ;
+	width: 100%;
+	height: 300px;
+	bottom: 0px;
+	z-index: 10;
+}
+.back{
+	background: url(../img/groundBack.png);
+	width: 100%;
+	height: 280px;
+	bottom: 60px;
+	z-index: 8;
+}
+.div2{
+	position: absolute;
+	background: url(../img/Planetarium.png);
+	width: 330px;
+	height: 280px;
+	right: 50px;
+	bottom: 100px;
+	z-index: 8;
+}
+.div3{
+	position: absolute;
+	background: url(../img/Glockenspiel.png);
+	width: 142px;
+	height: 260px;
+	bottom: 200px;
+	left: 600px;
+	z-index: 8;
+}
+.div4{
+	position: absolute;
+	background: url(../img/dowEventCenter.png);
+	width: 500px;
+	height: 200px;
+	bottom: 200px;
+	left: 50px;
+	z-index: 8;
+}
+.div5{
+	position: absolute;
+	background: url(../img/friendshipShell.png);
+	width: 230px;
+	height: 350px;
+	z-index: 10;
+	bottom: 150px;
+	left: 300px;
+}
+.div6{
+	position: absolute;
+	background: url(../img/beans.png);
+	width: 90px;
+	height: 260px;
+	bottom: 200px;
+	right: 580px;
+	z-index: 7;
+}
+.cloud{
+	position: absolute;
+}
+.large{
+	background: url(../img/cloudLarge.png);
+	width: 300px;
+	height: 170px;
+	left: 50%;
+}
+.medium{
+	background: url(../img/cloudMedium.png);
+	width: 160px;
+	height: 90px;
+	left: 25%;
+}
+.small{
+	background: url(../img/cloudSmall.png);
+	width: 90px;
+	height: 50px;
+	right: 25%;	
+}
+.skyline{
+	position: absolute;
+	background: url(../img/skyline.png);
+	width: 300px;
+	height: 150px;
+	bottom: 230px;
+	z-index: 7;
+	right: 400px;
+}
+@-webkit-keyframes name{
+	from{background-color: ivory;}
+	to{background-color: black;}
+}
