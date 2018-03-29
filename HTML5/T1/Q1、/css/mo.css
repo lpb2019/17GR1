@@ -1,0 +1,187 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+}
+
+.warp {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.top1 {
+	height: 35px;
+	background-color: beige;
+}
+
+.top2 {
+	height: 120px;
+	margin-top: 30px;
+}
+
+.temp {
+	line-height: 35px;
+}
+
+.top1 .temp a {
+	margin-left: 30px;
+}
+
+.r {
+	float: right;
+}
+
+.l {
+	float: left;
+}
+
+.top2 .warp .top2-r-1 {
+	position: relative;
+	width: 600px;
+}
+
+.top2 .warp .top2-r-1 span {
+	position: absolute;
+	top: 15px;
+	left: 55px;
+	width: 0px;
+	height: 0px;
+	border: solid 5px;
+	border-color: red transparent transparent transparent;
+}
+
+.top2 .warp .top2-r-1 input:nth-of-type(1) {
+	width: 70px;
+	height: 36px;
+	border: solid 3px fuchsia;
+	border-right: 0px;
+	line-height: 36px;
+}
+
+.top2 .warp .top2-r-1 input:nth-of-type(2) {
+	width: 400px;
+	height: 36px;
+	border: solid 3px fuchsia;
+	border-left: 0px;
+	border-right: 0px;
+	margin-left: -10px;
+	line-height: 36px;
+}
+
+.top2 .warp .top2-r-1 input:nth-of-type(3) {
+	width: 80px;
+	height: 36px;
+	line-height: 38px;
+	background-color: fuchsia;
+	font-size: 14px;
+	border: solid 2px fuchsia;
+	border-right: 0px;
+	margin-left: -6px;
+	padding-bottom: 38px;
+}
+
+.top3 {
+	border-bottom: solid 3px red;
+}
+
+.top3 .t3 li {
+	display: inline-block;
+	text-align: center;
+}
+
+.top3 .t3 a {
+	font-size: 25px;
+	margin-left: 50px;
+}
+
+.top3 .t3 li:first-of-type {
+	background-color: #FF0077;
+	width: 257px;
+	height: 40px;
+}
+
+.top3 .t3 li:first-of-type a {
+	margin-left: 0;
+}
+
+.top3 .t3 li:nth-of-type(3) {
+	border-left: solid 2px black;
+	border-right: solid 2px black;
+	margin-left: 50px;
+}
+
+.top3 .t3 li:nth-of-type(3) a {
+	margin-right: 50px;
+}
+
+.menu1 {
+	width: 257px;
+	background-color: #FEEFF3;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.menu1 ul li {
+	display: inline-block;
+	/*text-align: center;*/
+	width: 257px;
+	height: 50px;
+}
+
+.menu1 ul li a {
+	margin-left: 10px;
+	font-size: 14px;
+}
+.top4{
+	width: 100%;
+	height: 470px;
+	background-color:#F8B0C3 ;
+}
+.top4 .menu1 ul li{
+	position: relative;
+}
+
+.top4 .menu1 ul li span {
+	position: absolute;
+	right: 15px;
+	bottom: 35px;
+	width: 0px;
+	height: 0px;
+	border: solid 5px;
+	border-color: transparent transparent transparent red;
+}
+
+.top4 .menu1 .menu-a {
+	position: fixed;
+	z-index: 99;
+	width: 500px;
+	height: 450px;
+	background-color: antiquewhite;
+	left: 418px;
+	top: 230px;
+}
+
+.top4 .menu1 .menu-a .menu-top,
+.menu-mid,
+.menu-down {
+	width: 400px;
+	height: 30px;
+	margin-top: 40px;
+}
+.carousel{
+	width:778px;
+	height: 470px;
+}

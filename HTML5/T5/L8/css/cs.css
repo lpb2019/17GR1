@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.warp{
+	position:fixed;
+	width: 100%;
+	height: 650px;
+	background-color: azure;
+	-webkit-animation: tian 15s ease 2s infinite alternate;
+}
+.qiqiu{
+	position: absolute;
+	z-index: 6;
+	-webkit-animation: qi 5s ease infinite alternate;
+}
+/*.qiqiu::after{
+	content: "";
+	display: block;
+	position: relative;
+	background: url(../img/未标题-1.png) no-repeat;
+	height: 400px;
+	width:400px;
+	top: -100px;
+}*/
+
+
+@-webkit-keyframes tian{
+	from{
+		background-color: azure;
+	}
+	to{
+		
+		background-color: black;
+	}
+}
+@-webkit-keyframes qi{
+	0%{
+		left: -160px;
+	}
+	25%{
+		left: 20%;
+		-webkit-transform: rotate(30deg);
+	}
+	50%{
+		left: 50%;
+		-webkit-transform: rotate(60deg);
+	}
+	75%{
+		left: 85%;
+		-webkit-transform: rotate(90deg);
+	}
+	100%{
+		left: 100%;
+	}
+	
+}
+.ground{
+	position: absolute;
+}
+.font{
+	height: 300px;
+	width: 100%;
+	
+	background: url(../img/groundFront.png) repeat-x center;
+	bottom:0;
+	z-index: 10;
+}
+.mid{
+	height: 300px;
+	width: 100%;
+	bottom:0px;
+	
+	background: url(../img/groundMid.png) repeat-x ;
+	z-index: 9;
+}
+.back{
+	height: 200px;
+	width: 100%;
+	bottom: 70px;
+	z-index: 8;
+	background: url(../img/groundBack.png);
+}
+.q1{
+	position: absolute;
+	z-index: 8;
+	background: url(../img/Planetarium.png) no-repeat;
+	height: 300px;
+	width: 330px;
+	bottom: 100px;
+	right: 100px;
+}
+.q2{
+	position: absolute;
+    z-index: 7;	
+    background: url(../img/beans.png) no-repeat;
+    height: 300px;
+    width: 200px;
+    bottom: 100px;
+    right: 500px;
+}
+.q3{
+	position: absolute;
+	z-index: 8;
+	background: url(../img/Glockenspiel.png)no-repeat;
+	height: 300px;
+	width: 180px;
+	bottom: 150px;
+	right: 670px;
+}
+.q4{
+	position: absolute;
+	z-index: 8;
+	background: url(../img/dowEventCenter.png) no-repeat;
+	width: 500px;
+	height: 300px;
+	bottom:70px;
+	left: 70px;
+}
+.q5{
+	position: absolute;
+	z-index: 9;
+	background: url(../img/friendshipShell.png)no-repeat;
+	width: 240px;
+	height: 400px;
+	bottom: 80px;
+	left: 300px;
+}
+.q6{
+	position: absolute;
+	z-index: 5;
+	background: url(../img/cloudLarge.png)no-repeat;
+	width: 320px;
+	height: 100px;
+}
+.q7{
+	position: absolute;
+	z-index: 5;
+	background:url(../img/cloudMedium.png)no-repeat;
+	width: 200px;
+	height: 100px;
+	left: 500px;
+}
+.q8{
+	position: absolute;
+	z-index: 5;
+	background:url(../img/cloudSmall.png)repeat-x;
+	width: 265px;
+	height: 100px;
+	right: 100px;
+}
+.q9{
+	position: absolute;
+	z-index: 5;
+	background:url(../img/skyline.png)repeat-x;
+	width: 500px;
+	height: 150px;
+	bottom: 150px;
+	right: 110px;
+}
+.q10{
+	
+}

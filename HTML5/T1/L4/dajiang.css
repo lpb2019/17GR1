@@ -1,0 +1,156 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+html,body{
+	height: 100%;
+	
+}
+#zong{
+	height:2300px;
+}
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0,0,0,0.4);
+	
+}
+a{
+	text-decoration: none;
+}
+#top-left,#top-right,nav ul li{
+		display: inline-block;
+}
+
+#top-right{
+	position: relative;
+	float: right;
+	bottom: 70px;
+	margin-right: 40px;
+	
+}
+nav ul li{
+	position: relative;
+	left: 200px;
+	bottom: 50px;
+	margin-left: 30px;
+}
+#lunbo{
+	position: relative;
+	bottom:80px;
+	z-index: -1;
+	
+}
+a{
+	color: white;
+}
+a:hover{
+	color: black;
+	
+}
+#xiala{
+
+	position: absolute;
+	display: none;	/*此元素不会被显示。*/
+	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	 /*box-shadow 属性向框添加一个或多个阴影。*/
+	  min-width: 160px;
+	/*min-width 属性设置元素的最小宽度。*/
+	cursor: pointer; /*属性规定要显示的光标的类型（形状）。光标呈现为指示链接的指针（一只手）*/
+}
+#xiala a{
+	display: block;/*此元素将显示为块级元素，此元素前后会带有换行符。*/
+	background-color: darkgray;
+}
+
+#top-right:hover #xiala{
+	
+	display: block;
+}
+#zhongjian{
+	margin-left: 100px;
+	
+}
+#zhong2{
+	position: relative;
+    left:800px ;
+    bottom: 1000px;
+	
+}
+#zhong1{
+	position: relative;
+    left:700px ;
+    bottom: 340px;
+	
+}
+#zhong3{
+	position: relative;
+    float: left;
+    bottom: 640px;
+    margin-left: 100px;
+	
+}
+#zhong4{
+	position: relative;
+    left:100px ;
+    bottom: 635px;
+	
+}
+#xia{
+
+	width: 1300px;
+	height: 200px;
+	background-color: white;
+	position: relative;
+	bottom: 600px;
+	left: 90px;
+	
+}
+#xia li{
+	display: inline-block;
+}
+.li1{
+	
+	position: relative;
+	top: 80px;
+	left: 100px;
+}
+.li2{
+	position: relative;
+	top: 80px;
+	left: 400px;
+	
+}
+.li3{
+	position: relative;
+	top: 80px;
+	left: 700px;
+	
+}
+.footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.8);
+	bottom: 600px;
+}
+ul {
+	 /*属性设置列表项标记的类型none	无标记。*/
+	list-style-type:none;
+}
+.footer div {
+	
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 60px;
+	
+}
+.di a{
+	
+	margin: 20px;
+	
+	
+	
+}
