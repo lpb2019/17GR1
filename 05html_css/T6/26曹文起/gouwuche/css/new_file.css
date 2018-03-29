@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+.r{
+	float: right;
+}
+.l{
+	float: left;
+}
+.top{
+	width: 100%;
+	height: 800px;
+}
+.wp{
+	width: 100%;
+	height: 50px;
+	background-color: azure;
+}
+.wp .tomp a{
+	margin-right: 40px;
+	left: 10px;
+	line-height: 40px;
+	color: black;
+}
+.tomp a:hover{
+	color: red;
+}
+.shen{
+	height:100px;
+	width: 100%;
+	background-color: burlywood;
+}
+.wp1 a{
+	line-height: 140px;
+	margin-left: 140px;
+}
+.wp2 a{
+	line-height: 140px;
+	opacity: 0.7;
+	margin-right: 100px;
+}
+.top1 {
+	width:900px;
+	height:560px;
+	border: solid 1px black;
+	margin-top: -40px;
+	margin-left: 150px;
+	
+}
+
+.caidan a {
+	color: #000000;
+}
+.ww{
+	height: 40px;
+	width: 900px;
+	border: solid 1px black;
+}
+.w1{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.w2{
+	margin-left: 300px;
+	margin-top: -20px;
+}
+.w3 li{
+	display: inline-block;
+	padding: 20px;
+}
+.w3{
+	margin-left: 440px;
+	margin-top: -40px;
+	
+}
+.qq{
+	height: 60px;
+	width:900px;
+	border: solid 1px black;
+}
+.q1{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.q2{
+	margin-left: 80px;
+}
+.q3{
+	margin-left: 370px;
+	margin-top: -30px;
+}
+.q4{
+	margin-left: 680px;
+	margin-top: -20px;
+}
+.q4 input{
+	width: 30px;
+}
+.lu{
+	height: 130px;
+	width: 900px;
+	border: solid 1px black;
+}
+.si{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.min{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+.min1{
+	margin-left: 500px;
+	margin-top: -60px;
+}
+.min2{
+	margin-left: 600px;
+	margin-top: -40px;
+}
+.min3 a{
+	display: inline-block;
+	padding: 20px;
+}
+.min3{
+	margin-left: 700px;
+	margin-top: -50px;
+}
+.yu{
+	height: 80px;
+	width: 900px;
+	border: solid 1px black;
+}
+.fen{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.fen1{
+	margin-left: 80px;
+}
+.fen2{
+	margin-left: 370px;
+	margin-top: -30px;
+}
+.fen3{
+	margin-left: 680px;
+	margin-top: -20px;
+}
+.fen3 input{
+	width: 30px;
+}
+.tn{
+	height: 130px;
+	width: 900px;
+	border: solid 1px black;
+}
+.t1{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.t2{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+.t3{
+	margin-left: 500px;
+	margin-top: -60px;
+}
+.t4{
+	margin-left: 600px;
+	margin-top: -40px;
+}
+.t5 a{
+	display: inline-block;
+	padding: 20px;
+}
+.t5{
+	margin-left: 700px;
+	margin-top: -50px;
+}
+.cc{
+	height: 78px;
+	width: 900px;
+	border: solid 1px black;
+}
+.c1{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.c2{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+.c3{
+	margin-left: 500px;
+	margin-top: -10px;
+}
+.c4{
+	margin-left: 700px;
+	margin-top: -20px;
+}
+.c5{
+	margin-left: 800px;
+	margin-top: -10px;
+}
+.c5 img{
+	height: 30px;
+	width: 20px;
+	background-color: dimgray;
+}
+.cao{
+	margin-left: 100px;
+	margin-top: -70px;
+}
