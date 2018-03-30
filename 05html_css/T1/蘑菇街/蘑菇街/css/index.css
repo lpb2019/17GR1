@@ -1,0 +1,166 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100%;
+}
+.wrap{
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+ul ,ol{
+	list-style: none;
+}
+.r{
+	float: right;
+}
+.l{
+	float: left;
+}
+.top{
+	height: 35px;
+	width: 100%;
+background-color: azure;
+	
+}
+.temp {
+	
+	line-height: 35px;
+	
+
+}
+.div{
+	height: 120px;
+}
+.div2-l,.div2-r{
+
+}
+.div2-r-top input:nth-of-type(1){
+	width: 100px;
+	height: 35px;
+	border: solid 1px black;
+	border-right: 0px;
+		line-height: 40px;
+		text-align: center;
+}
+.div2-r-top input:nth-of-type(2){
+	width: 300px;
+	height: 35px;
+	border: solid 1px black;
+	border-left: 0px;
+	margin-left: -5px;
+	line-height: 40px;
+	border-right: 0px;
+}
+.div2-r-top input:nth-of-type(3){
+	width: 50px;
+	height: 35px;
+	border: solid 1px black;
+	border-left: 0px;
+	line-height: 20px;
+	margin-left: -8px;
+	background: palegreen;
+			text-align: center;
+
+}
+.div2-r-down a{
+	margin-left: 8px;
+	color: chocolate;
+	font-size: 14px;
+	font-weight: 200;
+}
+.list{
+	height: 40px;
+	line-height:40px ;
+	border-bottom: solid 2px#ff0077;
+}
+.list ul,.list ul li{
+	display: inline-block;
+}
+.list ul li{
+	height: 40px;
+	line-height: 40px;
+	/*margin-left: 20px;*/
+	text-align: center;
+	width: 141px;
+}
+.list ul li a{
+	font-weight: 700;
+	border-left: solid 1px #DDDDDD;
+    /*display: inline-block;*/
+	height: 20px;
+	line-height: 40px;
+	width: 141px;
+	
+	
+}
+.list ul li:first-of-type{
+	width: 257px;
+	background-color: #FF0077;
+	color: white;
+	font-size: 18px;
+}
+.list ul li:first-of-type a{
+	border: 0px;
+}
+.menu-left{
+	background-color:#FFE0ED;
+	width: 256px;
+	margin-left: 10px;
+}
+.menu-left li{
+	height: 40px;
+	width: 256px;
+	text-align: left;
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: dashed 1px black;
+	z-index: 99;
+}
+.menu-left li a{
+	color:gray;
+	line-height: 30px;
+}
+.menu-sec{
+     position: absolute;
+     background:pink;
+     top: 195px;
+     left: 465px;	
+     text-align: center;
+     z-index: 99;
+}
+.menu-sec-top{
+	height: 50px;
+	width: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.menu-sec-mid{
+	height: 100px;
+	width: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.menu-sec-dowm{
+	height: 200px;
+	width: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.menu-sec li a{
+	display: inline-block;
+	margin-left: 10px;
+}
+.menu-mid{
+	position: absolute;
+	width: 778px;
+	height: 440px;
+	top: 195px;
+	left: 465px;
+}

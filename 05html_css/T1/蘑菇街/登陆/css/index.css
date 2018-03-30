@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100%;
+}
+.warp{
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+ul ,li{
+	list-style: none;
+}
+.r{
+	float: right;
+}
+.l{
+	float: left;
+	height: 100%;
+}
+.top{
+	padding: 20px;
+}
+.top-r a{
+	font-size: 12px;
+	color: black;
+}
+.top-r{
+	display: inline-block;
+	height: 30px;
+	width: 863px;
+	line-height: 30px;
+	background-color: #FFEFEF;
+	border: 1px solid #FFC0CC;
+	margin: 10px;
+}
+.zhong img{
+	width: 100%;
+	height: 500px;
+}
+.zhong-r{
+	height: 350px;
+	width: 348px;
+	background-color: #FFDCD8;
+	border: 1px solid white;
+	opacity:0.8;
+	z-index: 50;
+	position: absolute;
+	top: 240px;
+	left: 1080px;
+	padding: 20px;	
+	text-align: center;
+	overflow: hidden;
+	
+	
+}
+.content input{
+	width: 250px;
+	height: 42px;
+	margin-bottom: 100px;
+	}
+.content input:nth-of-type{3}{
+	background-color: #FE556F;
+	color: white;
+	}
+.warp .content :nth-of-type(3){
+	background-color: #FE556F;
+	color: white;
+}
+.warp .content1 :nth-of-type(3){
+	background-color: #FE556F;
+	color: white;
+}
+.warp .content1 input:nth-of-type(2){
+	display: inline-block;
+	height: 52px;
+	width: 120px;
+	background-color:lightcoral;
+	}
+	.warp .content active:nth-of-type(2) input:nth-of-type(2){
+		width: 200px;
+	}
+.footer{
+	width: 100%;
+	height: 360px;	
+}
+.footer-nav{
+	width:100%;
+	margin: auto;
+	
+}
+.div1{
+	margin-left: 60px;
+	margin-top: 50px;
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	
+}
+.div1 li{
+	text-align: center;
+	display: inline-block;
+	float: left;
+	margin-left: 63px;
+}
+.div1 li a{
+	color: black;
+}
+hr{
+	/*text-align: center;*/
+	margin: auto;
+}
+.div2{
+	margin-left: -60px;
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	font-size: 12px;
+	
+}
+.div2 ul li{
+	display: inline-block;
+	margin-left: 20px;
+}
+.div2 ul li a{
+	font-size: 16px;
+	color: black;
+}
+.footer2{
+	margin-left: -170px;
+}
+
+s{
+	color: #9B9B9B;
+}
+p{
+	font-size: 20px;
+	color: red;
+}
+
