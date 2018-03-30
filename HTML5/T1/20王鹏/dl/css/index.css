@@ -1,0 +1,180 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.r {
+	float: right;
+}
+
+.l {
+	float: left;
+}
+
+.top {
+	height: 50px;
+	padding: 10px;
+	margin-bottom: 80px;
+}
+
+.top-l img{
+    
+}
+
+.top-r {
+	height: 30px;
+	width: 850px;
+	padding: 5px;
+	background-color: #FFEFEF;
+	border: 1px solid coral;
+	position: absolute;
+	top: 60px;
+	right: 200px;
+}
+
+.top-r a {
+	font-size: 5px;
+}
+
+.xxk {
+	width: 400px;
+	height: 360px;
+	background-color: white;
+	opacity: .8;
+	position: absolute;
+	top: 300px;
+	right: 200px;
+	text-align: center;
+}
+
+.active1 {
+	width: 200px;
+	height: 42px;
+}
+
+.active2 {
+	width: 200px;
+	height: 42px;
+}
+
+.xxk input {
+	width: 300px;
+	height: 40px;
+	margin: 10px;
+}
+
+.dl {
+	background-color: deeppink;
+	border: 0px;
+	color: white;
+}
+#mm{
+	width: 50px;
+}
+.xxk a {
+	color: black;
+}
+
+.xxk a:last-of-type {
+	color: dimgray;
+	text-decoration: underline;
+}
+
+.footer {
+	height: 170px;
+	width: 100%;
+	background: aliceblue;
+	text-align: center;
+	border-bottom: 1px solid red;
+}
+
+.footer-top a {
+	display: inline-block;
+	margin: 50px 100px 10px 100px;
+	color: black;
+}
+
+.footer-top-2 a {
+	color: gray;
+	position: absolute;
+	display: inline-block;
+}
+
+.footer-top-2 a:nth-of-type(1) {
+	left: 240px;
+}
+
+.footer-top-2 a:nth-of-type(2) {
+	left: 320px;
+}
+
+.footer-top-2 a:nth-of-type(3) {
+	left: 570px;
+}
+
+.footer-top-2 a:nth-of-type(4) {
+	left: 640px;
+}
+
+.footer-top-2 a:nth-of-type(5) {
+	left: 800px;
+}
+
+.footer-top-2 a:nth-of-type(6) {
+	left: 960px;
+}
+
+.footer-top-2 a:nth-of-type(7) {
+	left: 1200px;
+}
+
+.footer-top-2 a:nth-of-type(8) {
+	left: 1260px;
+}
+
+.footer-top-2 a:nth-of-type(9) {
+	left: 1320px;
+}
+
+.footer-down {
+	text-align: center;
+}
+
+.footer-dowm-top1 {
+	display: inline-block;
+	width: 1200px;
+}
+
+.footer-dowm-top1 a {
+	margin-left: 20px;
+}
+
+.footer-dowm-top2 {
+	display: inline-block;
+	width: 1200px;
+	margin-top: 9px;
+}
+
+.footer-dowm-top2 a {
+	margin-left: 5px;
+}
