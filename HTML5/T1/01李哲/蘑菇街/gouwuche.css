@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #F2F2F2;
+	height: 800px;
+	width: 100%;
+}
+
+.div1 {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.r {
+	float: right;
+}
+
+.l {
+	float: left;
+}
+
+.yi {
+	height: 35px;
+	width: 100%;
+	line-height: 35px;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+.yi-zi {
+	color: black;
+	font: 14px "微软雅黑";
+}
+
+.yi a {
+	margin: 0 5px;
+}
+
+.yi img {
+	margin-bottom: -3px;
+	margin-right: 5px;
+}
+
+.yi-you-1 {
+	border-right: 1px solid #DEDEDE;
+	padding: 0 10px;
+}
+.er{
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #DEDEDE;
+}
+.er img:nth-of-type(2){
+	margin-top:10px;
+}
+.san span{
+	margin: 10px 10px;
+	color: #000000;
+}
+#zi1{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	background: red;
+}
+.si-1{
+	height: 400px;
+	width: 1100px;
+	background: white;
+	margin: 0 auto;
+}
+table{
+	display: inline-block;
+	margin-left:80px;
+	margin-right:80px;
+	margin-top: 30px;
+}
+.xia{
+	margin-left: 120px;
+}
+.xia-2{
+	padding-top: 30px;
+	margin: 10px 80px;
+	border-top: 3px solid #FE6582;
+}
+.xia-2 a{
+	color: #000000;
+	
+}
+
+
+
+
