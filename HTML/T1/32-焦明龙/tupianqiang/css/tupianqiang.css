@@ -1,0 +1,78 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+.wrap {
+	height: 1000px;
+	width: 100%;
+	background-color: darkgrey;
+	padding: 10px;
+}
+
+.h {
+	margin-left: 40%;
+	margin-top: 200px;
+}
+
+.h div{
+	border-radius: 20px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform: rotateX(-30deg);
+	opacity: 0.6;
+	position: absolute;
+}
+
+.h .div1 {
+	-webkit-transform: rotateY(0deg) rotateX(-3deg) translateZ(200px);
+	-ms-transform: rotateY(0deg) rotateX(-3deg) translateZ(200px);
+}
+
+.h .div2 {
+	-webkit-transform: rotateY(60deg) rotateX(-3deg) translateZ(200px);
+	-ms-transform: rotateY(60deg) rotateX(-3deg) translateZ(200px);
+}
+.h .div3 {
+	-webkit-transform: rotateY(120deg) rotateX(-10deg) translateZ(200px);
+	-ms-transform: rotateY(120deg) rotateX(-10deg) translateZ(200px);
+}
+
+.h .div4 {
+	-webkit-transform: rotateY(180deg) rotateX(-10deg) translateZ(200px);
+	-ms-transform: rotateY(180deg) rotateX(-10deg) translateZ(200px);
+}
+
+.h .div5 {
+	-webkit-transform: rotateY(240deg) rotateX(-10deg) translateZ(200px);
+	-ms-transform: rotateY(240deg) rotateX(-10deg) translateZ(200px);
+}
+
+.h .div6 {
+	-webkit-transform: rotateY(300deg) rotateX(-3deg) translateZ(200px);
+	-ms-transform: rotateY(300deg) rotateX(-3deg) translateZ(200px);
+}
+.h div img{
+	height: 233PX;
+	width: 233PX;
+	border-radius: 20px;
+	-webkit-transition: all 0.3s linear;
+	
+}
+.h div:hover{
+	opacity: 1;
+	
+}
+.h div img:hover {
+	transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+}

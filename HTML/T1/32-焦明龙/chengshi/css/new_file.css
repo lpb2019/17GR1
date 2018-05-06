@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-color: azure;
+}
+.div1{
+	height: 600px;
+	width: 100%;
+	background-color: aquamarine;
+	-webkit-animation: beijing 5s linear infinite alternate;
+}
+.div1 a{
+	background: url(../img/balloon.png) no-repeat;
+	display: block;
+	position: absolute;
+	height: 230px;
+	width: 157px;
+	left: -200px;
+	-webkit-animation: qiqiu 5s linear infinite alternate;
+}
+@-webkit-keyframes qiqiu{
+	0%{
+		
+	}
+	25%{
+		-webkit-transform: rotate(30deg);
+		left: 25%;
+	}
+	50%{
+		-webkit-transform: rotate(60deg);
+		left: 50%;
+	}
+	75%{
+		-webkit-transform: rotate(-60deg);
+		left: 75%;
+	}
+	100%{
+		-webkit-transform: rotate(-30deg);
+		left: 100%;
+	}
+}
+@-webkit-keyframes beijing{
+	0%{
+		background-color: cornflowerblue;
+	}
+	25%{
+		background-color: burlywood;
+		
+	}
+	50%{
+		background-color: white;
+	}
+	75%{
+		
+		background-color: #DEB887;
+	}
+	100%{
+		background-color: black;
+	}
+}
+.groung{
+	position: relative;
+}
+.div3{
+	height: 300px;
+	width: 100%;
+	background: url(../img/groundFront.png) repeat-x center;
+	top: 300px;
+	z-index: 90;
+}
+.div4{
+	height: 300px;
+	width: 100%;
+	background: url(../img/groundMid.png) repeat-x ;
+	z-index: 80;
+}
+.div5{
+	height: 300px;
+	width: 100%;
+	background: url(../img/groundBack.png) repeat-x ;
+	top: -300px;
+	z-index: 70;
+}
+.div6{
+	height: 400px;
+	width: 300px;
+	background: url(../img/friendshipShell.png) no-repeat;
+	left: 260px;
+	top: -200px;
+	z-index: 80;
+}
+
+.div7{
+	height: 400px;
+	width: 700px;
+	background: url(../img/dowEventCenter.png) no-repeat;
+	left: 30px;
+	top: -85px;
+	z-index: 70;
+}
+.div8{
+	height: 400px;
+	width: 500px;
+	background: url(../img/Glockenspiel.png) no-repeat;
+	left: 550px;
+	top: -550px;
+	z-index:70;
+}
+.div9{
+	height: 500px;
+	width: 500px;
+	background: url(../img/Planetarium.png) no-repeat;
+	left: 1000px;
+	top: -900px;
+	z-index: 70;
+}
+.div10{
+	height: 500px;
+	width: 500px;
+	background: url(../img/beans.png) no-repeat;
+	left: 700px;
+	top: -730px;
+	z-index:60;
+}
+.

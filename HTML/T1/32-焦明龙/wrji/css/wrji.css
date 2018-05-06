@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+.d1{
+	
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+.d2{
+	background: rgba(0,0,0,0.7);
+	height: 90px;
+	width: 100%;
+	
+	left: 0px;
+}
+.d3,.d4,.d4 li,.d5{
+	display: inline-block;
+	height: 90px;
+	line-height: 90px;
+}
+.d3{
+	margin:15px 48px;
+	
+}
+
+.d4 li{
+	vertical-align: middle;
+	line-height: 50px;
+	margin: 0 10px;
+	
+}
+.d4 li a{
+	color: white;
+}
+.d4 li a:hover{
+	color: #FF0000;
+}
+.d5 a{
+	display: inline-block;
+	
+	line-height: 30px;
+	width: 40px;
+	vertical-align:top;
+	vertical-align: 20px;
+	color: white;
+	border: solid 1px #FF0000;
+	border-radius: 10px;
+	margin: 4px;
+	
+}
+.d5 a:hover{
+	background-color: #FF0000;
+	color: blue;
+}
+.tu1{
+	margin-left:80px;
+}
+.tu2{
+	margin-left:700px;
+	margin-top: -670px;
+}
+.tu3{
+	margin-left: 700px;
+}
+.tu4{
+	margin-left: 80px;
+	margin-top: 40px;
+}
+.tu5{
+	margin-left:700px;
+	margin-top:-310px;
+}
+.t1{
+	margin-top: 80px;
+	background: rgba(0,0,0,0.85);
+	height: 400px;
+	width: 100%;
+	left: 0px;
+}
+
+.t2 ul li {
+	text-decoration: none;
+	margin-left: 100px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.t2 a{
+	color: white;
+}
+.t2 a:hover{
+	color: red;
+	
+}
+.t3{
+	margin-top:70px;
+	width: 100%;
+}
