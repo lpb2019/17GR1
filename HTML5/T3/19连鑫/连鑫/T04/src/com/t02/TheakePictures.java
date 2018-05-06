@@ -1,0 +1,7 @@
+package com.t02;
+
+//’’œ‡
+public interface TheakePictures {
+	
+	void takePictures();
+}
